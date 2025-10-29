@@ -138,33 +138,33 @@ RETURN ONLY VALID JSON - NO MARKDOWN, NO EXPLANATIONS"""
 # Hardcoded parsed data (DUMMY - will be replaced at runtime)
 parsed_data_json = r'''
 {
-  "url": "https://form.jotform.com/252131352654450",
-  "title": "Sample Job Application Form",
-  "timestamp": "2025-10-27T05:31:31.416Z",
+  "url": "https://form.jotform.com/252470591559465",
+  "title": "Online Internship Application Form",
+  "timestamp": "2025-10-29T06:05:10.757Z",
   "sections": [
     {
       "heading": "Personal Information",
       "fields": [
         {
-          "selector": "#first_4",
-          "id": "first_4",
-          "name": "q4_name[first]",
+          "selector": "#first_12",
+          "id": "first_12",
+          "name": "q12_fullName12[first]",
           "type": "text",
           "inputType": "text",
           "labels": {
-            "directLabel": "Name",
+            "directLabel": "Full Name",
             "placeholder": "",
             "contextText": "First Name"
           },
-          "value": "",
-          "isEmpty": true,
+          "value": "John",
+          "isEmpty": false,
           "isRequired": false,
           "validation": {}
         },
         {
-          "selector": "#last_4",
-          "id": "last_4",
-          "name": "q4_name[last]",
+          "selector": "#last_12",
+          "id": "last_12",
+          "name": "q12_fullName12[last]",
           "type": "text",
           "inputType": "text",
           "labels": {
@@ -172,187 +172,54 @@ parsed_data_json = r'''
             "placeholder": "",
             "contextText": "Last Name"
           },
-          "value": "",
-          "isEmpty": true,
+          "value": "Doe",
+          "isEmpty": false,
           "isRequired": false,
           "validation": {}
         },
         {
-          "selector": "#input_5_full",
-          "id": "input_5_full",
-          "name": "q5_phoneNumber[full]",
-          "type": "tel",
-          "inputType": "tel",
+          "selector": "#input_54",
+          "id": "input_54",
+          "name": "q54_preferredName54",
+          "type": "text",
+          "inputType": "text",
           "labels": {
-            "directLabel": "Phone Number",
-            "placeholder": "(000) 000-0000"
+            "directLabel": "Preferred Name",
+            "placeholder": " "
           },
-          "value": "",
-          "isEmpty": true,
+          "value": "Johnny",
+          "isEmpty": false,
           "isRequired": false,
           "validation": {}
         },
         {
-          "selector": "#input_6",
-          "id": "input_6",
-          "name": "q6_email",
-          "type": "email",
-          "inputType": "email",
+          "selector": "#input_20_0",
+          "id": "input_20_0",
+          "name": "q20_gender20[]",
+          "type": "checkbox",
+          "inputType": "checkbox",
           "labels": {
-            "directLabel": "Email",
+            "directLabel": "Male",
+            "groupLabel": "Gender",
             "placeholder": "",
-            "contextText": "example@example.com"
+            "contextText": "Male"
           },
-          "value": "",
-          "isEmpty": true,
+          "value": true,
+          "isEmpty": false,
           "isRequired": false,
           "validation": {}
         },
         {
-          "selector": "#input_7_addr_line1",
-          "id": "input_7_addr_line1",
-          "name": "q7_address[addr_line1]",
-          "type": "text",
-          "inputType": "text",
+          "selector": "#input_20_1",
+          "id": "input_20_1",
+          "name": "q20_gender20[]",
+          "type": "checkbox",
+          "inputType": "checkbox",
           "labels": {
-            "directLabel": "Address",
+            "directLabel": "Female",
+            "groupLabel": "Gender",
             "placeholder": "",
-            "contextText": "Street Address"
-          },
-          "value": "",
-          "isEmpty": true,
-          "isRequired": false,
-          "validation": {
-            "maxLength": 100
-          }
-        },
-        {
-          "selector": "#input_7_addr_line2",
-          "id": "input_7_addr_line2",
-          "name": "q7_address[addr_line2]",
-          "type": "text",
-          "inputType": "text",
-          "labels": {
-            "directLabel": "Street Address Line 2",
-            "placeholder": "",
-            "contextText": "Street Address Line 2"
-          },
-          "value": "",
-          "isEmpty": true,
-          "isRequired": false,
-          "validation": {
-            "maxLength": 100
-          }
-        },
-        {
-          "selector": "#input_7_city",
-          "id": "input_7_city",
-          "name": "q7_address[city]",
-          "type": "text",
-          "inputType": "text",
-          "labels": {
-            "directLabel": "City",
-            "placeholder": "",
-            "contextText": "City"
-          },
-          "value": "",
-          "isEmpty": true,
-          "isRequired": false,
-          "validation": {
-            "maxLength": 60
-          }
-        },
-        {
-          "selector": "#input_7_state",
-          "id": "input_7_state",
-          "name": "q7_address[state]",
-          "type": "text",
-          "inputType": "text",
-          "labels": {
-            "directLabel": "State / Province",
-            "placeholder": "",
-            "contextText": "State / Province"
-          },
-          "value": "",
-          "isEmpty": true,
-          "isRequired": false,
-          "validation": {
-            "maxLength": 60
-          }
-        },
-        {
-          "selector": "#input_7_postal",
-          "id": "input_7_postal",
-          "name": "q7_address[postal]",
-          "type": "text",
-          "inputType": "text",
-          "labels": {
-            "directLabel": "Postal / Zip Code",
-            "placeholder": "",
-            "contextText": "Postal / Zip Code"
-          },
-          "value": "",
-          "isEmpty": true,
-          "isRequired": false,
-          "validation": {
-            "maxLength": 20
-          }
-        },
-        {
-          "selector": "#input_10",
-          "id": "input_10",
-          "name": "q10_whatIs",
-          "type": "select-one",
-          "labels": {
-            "directLabel": "What is the best time to contact you?",
-            "ariaLabel": "What is the best time to contact you?"
-          },
-          "value": "",
-          "isEmpty": true,
-          "isRequired": false,
-          "options": {
-            "unselected": [
-              [
-                "Morning",
-                "Morning"
-              ],
-              [
-                "Lunch Time",
-                "Lunch Time"
-              ],
-              [
-                "Evening",
-                "Evening"
-              ],
-              [
-                "Afternoon",
-                "Afternoon"
-              ],
-              [
-                "Doesn't Matter",
-                "Doesn't Matter"
-              ]
-            ],
-            "selected": [
-              [
-                "",
-                "Please Select"
-              ]
-            ]
-          },
-          "validation": {}
-        },
-        {
-          "selector": "#input_8_0",
-          "id": "input_8_0",
-          "name": "q8_areYou8",
-          "type": "radio",
-          "inputType": "radio",
-          "labels": {
-            "directLabel": "Yes",
-            "groupLabel": "Are you currently legally entitled to work in the country where the job is based?",
-            "placeholder": "",
-            "contextText": "Yes"
+            "contextText": "Female"
           },
           "value": false,
           "isEmpty": true,
@@ -360,14 +227,1862 @@ parsed_data_json = r'''
           "validation": {}
         },
         {
-          "selector": "#input_8_1",
-          "id": "input_8_1",
-          "name": "q8_areYou8",
+          "selector": "#input_19_month",
+          "id": "input_19_month",
+          "name": "q19_birthDate19[month]",
+          "type": "select-one",
+          "labels": {
+            "directLabel": "Month",
+            "contextText": "Month"
+          },
+          "value": "11",
+          "isEmpty": false,
+          "isRequired": false,
+          "options": {
+            "unselected": [
+              [
+                "",
+                "Please select a month"
+              ],
+              [
+                "1",
+                "January"
+              ],
+              [
+                "2",
+                "February"
+              ],
+              [
+                "3",
+                "March"
+              ],
+              [
+                "4",
+                "April"
+              ],
+              [
+                "5",
+                "May"
+              ],
+              [
+                "6",
+                "June"
+              ],
+              [
+                "7",
+                "July"
+              ],
+              [
+                "8",
+                "August"
+              ],
+              [
+                "9",
+                "September"
+              ],
+              [
+                "10",
+                "October"
+              ],
+              [
+                "12",
+                "December"
+              ]
+            ],
+            "selected": [
+              [
+                "11",
+                "November"
+              ]
+            ]
+          },
+          "validation": {}
+        },
+        {
+          "selector": "#input_19_day",
+          "id": "input_19_day",
+          "name": "q19_birthDate19[day]",
+          "type": "select-one",
+          "labels": {
+            "directLabel": "Day",
+            "contextText": "Day"
+          },
+          "value": "18",
+          "isEmpty": false,
+          "isRequired": false,
+          "options": {
+            "unselected": [
+              [
+                "",
+                "Please select a day"
+              ],
+              [
+                "1",
+                "1"
+              ],
+              [
+                "2",
+                "2"
+              ],
+              [
+                "3",
+                "3"
+              ],
+              [
+                "4",
+                "4"
+              ],
+              [
+                "5",
+                "5"
+              ],
+              [
+                "6",
+                "6"
+              ],
+              [
+                "7",
+                "7"
+              ],
+              [
+                "8",
+                "8"
+              ],
+              [
+                "9",
+                "9"
+              ],
+              [
+                "10",
+                "10"
+              ],
+              [
+                "11",
+                "11"
+              ],
+              [
+                "12",
+                "12"
+              ],
+              [
+                "13",
+                "13"
+              ],
+              [
+                "14",
+                "14"
+              ],
+              [
+                "15",
+                "15"
+              ],
+              [
+                "16",
+                "16"
+              ],
+              [
+                "17",
+                "17"
+              ],
+              [
+                "19",
+                "19"
+              ],
+              [
+                "20",
+                "20"
+              ],
+              [
+                "21",
+                "21"
+              ],
+              [
+                "22",
+                "22"
+              ],
+              [
+                "23",
+                "23"
+              ],
+              [
+                "24",
+                "24"
+              ],
+              [
+                "25",
+                "25"
+              ],
+              [
+                "26",
+                "26"
+              ],
+              [
+                "27",
+                "27"
+              ],
+              [
+                "28",
+                "28"
+              ],
+              [
+                "29",
+                "29"
+              ],
+              [
+                "30",
+                "30"
+              ],
+              [
+                "31",
+                "31"
+              ]
+            ],
+            "selected": [
+              [
+                "18",
+                "18"
+              ]
+            ]
+          },
+          "validation": {}
+        },
+        {
+          "selector": "#input_19_year",
+          "id": "input_19_year",
+          "name": "q19_birthDate19[year]",
+          "type": "select-one",
+          "labels": {
+            "directLabel": "Year",
+            "contextText": "Year"
+          },
+          "value": "2004",
+          "isEmpty": false,
+          "isRequired": false,
+          "options": {
+            "unselected": [
+              [
+                "",
+                "Please select a year"
+              ],
+              [
+                "2025",
+                "2025"
+              ],
+              [
+                "2024",
+                "2024"
+              ],
+              [
+                "2023",
+                "2023"
+              ],
+              [
+                "2022",
+                "2022"
+              ],
+              [
+                "2021",
+                "2021"
+              ],
+              [
+                "2020",
+                "2020"
+              ],
+              [
+                "2019",
+                "2019"
+              ],
+              [
+                "2018",
+                "2018"
+              ],
+              [
+                "2017",
+                "2017"
+              ],
+              [
+                "2016",
+                "2016"
+              ],
+              [
+                "2015",
+                "2015"
+              ],
+              [
+                "2014",
+                "2014"
+              ],
+              [
+                "2013",
+                "2013"
+              ],
+              [
+                "2012",
+                "2012"
+              ],
+              [
+                "2011",
+                "2011"
+              ],
+              [
+                "2010",
+                "2010"
+              ],
+              [
+                "2009",
+                "2009"
+              ],
+              [
+                "2008",
+                "2008"
+              ],
+              [
+                "2007",
+                "2007"
+              ],
+              [
+                "2006",
+                "2006"
+              ],
+              [
+                "2005",
+                "2005"
+              ],
+              [
+                "2003",
+                "2003"
+              ],
+              [
+                "2002",
+                "2002"
+              ],
+              [
+                "2001",
+                "2001"
+              ],
+              [
+                "2000",
+                "2000"
+              ],
+              [
+                "1999",
+                "1999"
+              ],
+              [
+                "1998",
+                "1998"
+              ],
+              [
+                "1997",
+                "1997"
+              ],
+              [
+                "1996",
+                "1996"
+              ],
+              [
+                "1995",
+                "1995"
+              ],
+              [
+                "1994",
+                "1994"
+              ],
+              [
+                "1993",
+                "1993"
+              ],
+              [
+                "1992",
+                "1992"
+              ],
+              [
+                "1991",
+                "1991"
+              ],
+              [
+                "1990",
+                "1990"
+              ],
+              [
+                "1989",
+                "1989"
+              ],
+              [
+                "1988",
+                "1988"
+              ],
+              [
+                "1987",
+                "1987"
+              ],
+              [
+                "1986",
+                "1986"
+              ],
+              [
+                "1985",
+                "1985"
+              ],
+              [
+                "1984",
+                "1984"
+              ],
+              [
+                "1983",
+                "1983"
+              ],
+              [
+                "1982",
+                "1982"
+              ],
+              [
+                "1981",
+                "1981"
+              ],
+              [
+                "1980",
+                "1980"
+              ],
+              [
+                "1979",
+                "1979"
+              ],
+              [
+                "1978",
+                "1978"
+              ],
+              [
+                "1977",
+                "1977"
+              ],
+              [
+                "1976",
+                "1976"
+              ],
+              [
+                "1975",
+                "1975"
+              ],
+              [
+                "1974",
+                "1974"
+              ],
+              [
+                "1973",
+                "1973"
+              ],
+              [
+                "1972",
+                "1972"
+              ],
+              [
+                "1971",
+                "1971"
+              ],
+              [
+                "1970",
+                "1970"
+              ],
+              [
+                "1969",
+                "1969"
+              ],
+              [
+                "1968",
+                "1968"
+              ],
+              [
+                "1967",
+                "1967"
+              ],
+              [
+                "1966",
+                "1966"
+              ],
+              [
+                "1965",
+                "1965"
+              ],
+              [
+                "1964",
+                "1964"
+              ],
+              [
+                "1963",
+                "1963"
+              ],
+              [
+                "1962",
+                "1962"
+              ],
+              [
+                "1961",
+                "1961"
+              ],
+              [
+                "1960",
+                "1960"
+              ],
+              [
+                "1959",
+                "1959"
+              ],
+              [
+                "1958",
+                "1958"
+              ],
+              [
+                "1957",
+                "1957"
+              ],
+              [
+                "1956",
+                "1956"
+              ],
+              [
+                "1955",
+                "1955"
+              ],
+              [
+                "1954",
+                "1954"
+              ],
+              [
+                "1953",
+                "1953"
+              ],
+              [
+                "1952",
+                "1952"
+              ],
+              [
+                "1951",
+                "1951"
+              ],
+              [
+                "1950",
+                "1950"
+              ],
+              [
+                "1949",
+                "1949"
+              ],
+              [
+                "1948",
+                "1948"
+              ],
+              [
+                "1947",
+                "1947"
+              ],
+              [
+                "1946",
+                "1946"
+              ],
+              [
+                "1945",
+                "1945"
+              ],
+              [
+                "1944",
+                "1944"
+              ],
+              [
+                "1943",
+                "1943"
+              ],
+              [
+                "1942",
+                "1942"
+              ],
+              [
+                "1941",
+                "1941"
+              ],
+              [
+                "1940",
+                "1940"
+              ],
+              [
+                "1939",
+                "1939"
+              ],
+              [
+                "1938",
+                "1938"
+              ],
+              [
+                "1937",
+                "1937"
+              ],
+              [
+                "1936",
+                "1936"
+              ],
+              [
+                "1935",
+                "1935"
+              ],
+              [
+                "1934",
+                "1934"
+              ],
+              [
+                "1933",
+                "1933"
+              ],
+              [
+                "1932",
+                "1932"
+              ],
+              [
+                "1931",
+                "1931"
+              ],
+              [
+                "1930",
+                "1930"
+              ],
+              [
+                "1929",
+                "1929"
+              ],
+              [
+                "1928",
+                "1928"
+              ],
+              [
+                "1927",
+                "1927"
+              ],
+              [
+                "1926",
+                "1926"
+              ],
+              [
+                "1925",
+                "1925"
+              ],
+              [
+                "1924",
+                "1924"
+              ],
+              [
+                "1923",
+                "1923"
+              ],
+              [
+                "1922",
+                "1922"
+              ],
+              [
+                "1921",
+                "1921"
+              ],
+              [
+                "1920",
+                "1920"
+              ]
+            ],
+            "selected": [
+              [
+                "2004",
+                "2004"
+              ]
+            ]
+          },
+          "validation": {}
+        },
+        {
+          "selector": "#input_55",
+          "id": "input_55",
+          "name": "q55_age",
+          "type": "number",
+          "inputType": "number",
+          "labels": {
+            "directLabel": "Age",
+            "placeholder": ""
+          },
+          "value": "20",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_13",
+          "id": "input_13",
+          "name": "q13_email13",
+          "type": "email",
+          "inputType": "email",
+          "labels": {
+            "directLabel": "E-mail",
+            "placeholder": "ex: myname@example.com",
+            "contextText": "example@example.com"
+          },
+          "value": "john.doe@example.com",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_17_full",
+          "id": "input_17_full",
+          "name": "q17_homeNumber[full]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Home Number",
+            "placeholder": ""
+          },
+          "value": "(180) 052-3430",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_18_full",
+          "id": "input_18_full",
+          "name": "q18_cellNumber[full]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Cell Number",
+            "placeholder": ""
+          },
+          "value": "(933) 108-7882",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_15_addr_line1",
+          "id": "input_15_addr_line1",
+          "name": "q15_permanentAddress[addr_line1]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Permanent Address",
+            "placeholder": "",
+            "contextText": "Street Address"
+          },
+          "value": "AXBX BUILDING, 3rd floor Room no 389",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 100
+          }
+        },
+        {
+          "selector": "#input_15_addr_line2",
+          "id": "input_15_addr_line2",
+          "name": "q15_permanentAddress[addr_line2]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Street Address Line 2",
+            "placeholder": "",
+            "contextText": "Street Address Line 2"
+          },
+          "value": "PBS colony XYZ road, Nagole",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 100
+          }
+        },
+        {
+          "selector": "#input_15_city",
+          "id": "input_15_city",
+          "name": "q15_permanentAddress[city]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "City",
+            "placeholder": "",
+            "contextText": "City"
+          },
+          "value": "Nagole",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 60
+          }
+        },
+        {
+          "selector": "#input_15_state",
+          "id": "input_15_state",
+          "name": "q15_permanentAddress[state]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "State / Province",
+            "placeholder": "",
+            "contextText": "State / Province"
+          },
+          "value": "San Francisco",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 60
+          }
+        },
+        {
+          "selector": "#input_15_postal",
+          "id": "input_15_postal",
+          "name": "q15_permanentAddress[postal]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Postal / Zip Code",
+            "placeholder": "",
+            "contextText": "Postal / Zip Code"
+          },
+          "value": "807101",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 20
+          }
+        },
+        {
+          "selector": "#input_15_country",
+          "id": "input_15_country",
+          "name": "q15_permanentAddress[country]",
+          "type": "select-one",
+          "labels": {
+            "directLabel": "Country",
+            "contextText": "Country"
+          },
+          "value": "United States",
+          "isEmpty": false,
+          "isRequired": true,
+          "options": {
+            "unselected": [
+              [
+                "",
+                "Please Select"
+              ],
+              [
+                "Afghanistan",
+                "Afghanistan"
+              ],
+              [
+                "Albania",
+                "Albania"
+              ],
+              [
+                "Algeria",
+                "Algeria"
+              ],
+              [
+                "American Samoa",
+                "American Samoa"
+              ],
+              [
+                "Andorra",
+                "Andorra"
+              ],
+              [
+                "Angola",
+                "Angola"
+              ],
+              [
+                "Anguilla",
+                "Anguilla"
+              ],
+              [
+                "Antigua and Barbuda",
+                "Antigua and Barbuda"
+              ],
+              [
+                "Argentina",
+                "Argentina"
+              ],
+              [
+                "Armenia",
+                "Armenia"
+              ],
+              [
+                "Aruba",
+                "Aruba"
+              ],
+              [
+                "Australia",
+                "Australia"
+              ],
+              [
+                "Austria",
+                "Austria"
+              ],
+              [
+                "Azerbaijan",
+                "Azerbaijan"
+              ],
+              [
+                "The Bahamas",
+                "The Bahamas"
+              ],
+              [
+                "Bahrain",
+                "Bahrain"
+              ],
+              [
+                "Bangladesh",
+                "Bangladesh"
+              ],
+              [
+                "Barbados",
+                "Barbados"
+              ],
+              [
+                "Belarus",
+                "Belarus"
+              ],
+              [
+                "Belgium",
+                "Belgium"
+              ],
+              [
+                "Belize",
+                "Belize"
+              ],
+              [
+                "Benin",
+                "Benin"
+              ],
+              [
+                "Bermuda",
+                "Bermuda"
+              ],
+              [
+                "Bhutan",
+                "Bhutan"
+              ],
+              [
+                "Bolivia",
+                "Bolivia"
+              ],
+              [
+                "Bosnia and Herzegovina",
+                "Bosnia and Herzegovina"
+              ],
+              [
+                "Botswana",
+                "Botswana"
+              ],
+              [
+                "Brazil",
+                "Brazil"
+              ],
+              [
+                "Brunei",
+                "Brunei"
+              ],
+              [
+                "Bulgaria",
+                "Bulgaria"
+              ],
+              [
+                "Burkina Faso",
+                "Burkina Faso"
+              ],
+              [
+                "Burundi",
+                "Burundi"
+              ],
+              [
+                "Cambodia",
+                "Cambodia"
+              ],
+              [
+                "Cameroon",
+                "Cameroon"
+              ],
+              [
+                "Canada",
+                "Canada"
+              ],
+              [
+                "Cape Verde",
+                "Cape Verde"
+              ],
+              [
+                "Cayman Islands",
+                "Cayman Islands"
+              ],
+              [
+                "Central African Republic",
+                "Central African Republic"
+              ],
+              [
+                "Chad",
+                "Chad"
+              ],
+              [
+                "Chile",
+                "Chile"
+              ],
+              [
+                "China",
+                "China"
+              ],
+              [
+                "Christmas Island",
+                "Christmas Island"
+              ],
+              [
+                "Cocos (Keeling) Islands",
+                "Cocos (Keeling) Islands"
+              ],
+              [
+                "Colombia",
+                "Colombia"
+              ],
+              [
+                "Comoros",
+                "Comoros"
+              ],
+              [
+                "Congo",
+                "Congo"
+              ],
+              [
+                "Cook Islands",
+                "Cook Islands"
+              ],
+              [
+                "Costa Rica",
+                "Costa Rica"
+              ],
+              [
+                "Cote d'Ivoire",
+                "Cote d'Ivoire"
+              ],
+              [
+                "Croatia",
+                "Croatia"
+              ],
+              [
+                "Cuba",
+                "Cuba"
+              ],
+              [
+                "Curaçao",
+                "Curaçao"
+              ],
+              [
+                "Cyprus",
+                "Cyprus"
+              ],
+              [
+                "Czech Republic",
+                "Czech Republic"
+              ],
+              [
+                "Democratic Republic of the Congo",
+                "Democratic Republic of the Congo"
+              ],
+              [
+                "Denmark",
+                "Denmark"
+              ],
+              [
+                "Djibouti",
+                "Djibouti"
+              ],
+              [
+                "Dominica",
+                "Dominica"
+              ],
+              [
+                "Dominican Republic",
+                "Dominican Republic"
+              ],
+              [
+                "Ecuador",
+                "Ecuador"
+              ],
+              [
+                "Egypt",
+                "Egypt"
+              ],
+              [
+                "El Salvador",
+                "El Salvador"
+              ],
+              [
+                "Equatorial Guinea",
+                "Equatorial Guinea"
+              ],
+              [
+                "Eritrea",
+                "Eritrea"
+              ],
+              [
+                "Estonia",
+                "Estonia"
+              ],
+              [
+                "Ethiopia",
+                "Ethiopia"
+              ],
+              [
+                "Falkland Islands",
+                "Falkland Islands"
+              ],
+              [
+                "Faroe Islands",
+                "Faroe Islands"
+              ],
+              [
+                "Fiji",
+                "Fiji"
+              ],
+              [
+                "Finland",
+                "Finland"
+              ],
+              [
+                "France",
+                "France"
+              ],
+              [
+                "French Polynesia",
+                "French Polynesia"
+              ],
+              [
+                "Gabon",
+                "Gabon"
+              ],
+              [
+                "The Gambia",
+                "The Gambia"
+              ],
+              [
+                "Georgia",
+                "Georgia"
+              ],
+              [
+                "Germany",
+                "Germany"
+              ],
+              [
+                "Ghana",
+                "Ghana"
+              ],
+              [
+                "Gibraltar",
+                "Gibraltar"
+              ],
+              [
+                "Greece",
+                "Greece"
+              ],
+              [
+                "Greenland",
+                "Greenland"
+              ],
+              [
+                "Grenada",
+                "Grenada"
+              ],
+              [
+                "Guadeloupe",
+                "Guadeloupe"
+              ],
+              [
+                "Guam",
+                "Guam"
+              ],
+              [
+                "Guatemala",
+                "Guatemala"
+              ],
+              [
+                "Guernsey",
+                "Guernsey"
+              ],
+              [
+                "Guinea",
+                "Guinea"
+              ],
+              [
+                "Guinea-Bissau",
+                "Guinea-Bissau"
+              ],
+              [
+                "Guyana",
+                "Guyana"
+              ],
+              [
+                "Haiti",
+                "Haiti"
+              ],
+              [
+                "Honduras",
+                "Honduras"
+              ],
+              [
+                "Hong Kong",
+                "Hong Kong"
+              ],
+              [
+                "Hungary",
+                "Hungary"
+              ],
+              [
+                "Iceland",
+                "Iceland"
+              ],
+              [
+                "India",
+                "India"
+              ],
+              [
+                "Indonesia",
+                "Indonesia"
+              ],
+              [
+                "Iran",
+                "Iran"
+              ],
+              [
+                "Iraq",
+                "Iraq"
+              ],
+              [
+                "Ireland",
+                "Ireland"
+              ],
+              [
+                "Israel",
+                "Israel"
+              ],
+              [
+                "Italy",
+                "Italy"
+              ],
+              [
+                "Jamaica",
+                "Jamaica"
+              ],
+              [
+                "Japan",
+                "Japan"
+              ],
+              [
+                "Jersey",
+                "Jersey"
+              ],
+              [
+                "Jordan",
+                "Jordan"
+              ],
+              [
+                "Kazakhstan",
+                "Kazakhstan"
+              ],
+              [
+                "Kenya",
+                "Kenya"
+              ],
+              [
+                "Kiribati",
+                "Kiribati"
+              ],
+              [
+                "North Korea",
+                "North Korea"
+              ],
+              [
+                "South Korea",
+                "South Korea"
+              ],
+              [
+                "Kosovo",
+                "Kosovo"
+              ],
+              [
+                "Kuwait",
+                "Kuwait"
+              ],
+              [
+                "Kyrgyzstan",
+                "Kyrgyzstan"
+              ],
+              [
+                "Laos",
+                "Laos"
+              ],
+              [
+                "Latvia",
+                "Latvia"
+              ],
+              [
+                "Lebanon",
+                "Lebanon"
+              ],
+              [
+                "Lesotho",
+                "Lesotho"
+              ],
+              [
+                "Liberia",
+                "Liberia"
+              ],
+              [
+                "Libya",
+                "Libya"
+              ],
+              [
+                "Liechtenstein",
+                "Liechtenstein"
+              ],
+              [
+                "Lithuania",
+                "Lithuania"
+              ],
+              [
+                "Luxembourg",
+                "Luxembourg"
+              ],
+              [
+                "Macau",
+                "Macau"
+              ],
+              [
+                "Macedonia",
+                "Macedonia"
+              ],
+              [
+                "Madagascar",
+                "Madagascar"
+              ],
+              [
+                "Malawi",
+                "Malawi"
+              ],
+              [
+                "Malaysia",
+                "Malaysia"
+              ],
+              [
+                "Maldives",
+                "Maldives"
+              ],
+              [
+                "Mali",
+                "Mali"
+              ],
+              [
+                "Malta",
+                "Malta"
+              ],
+              [
+                "Marshall Islands",
+                "Marshall Islands"
+              ],
+              [
+                "Martinique",
+                "Martinique"
+              ],
+              [
+                "Mauritania",
+                "Mauritania"
+              ],
+              [
+                "Mauritius",
+                "Mauritius"
+              ],
+              [
+                "Mayotte",
+                "Mayotte"
+              ],
+              [
+                "Mexico",
+                "Mexico"
+              ],
+              [
+                "Micronesia",
+                "Micronesia"
+              ],
+              [
+                "Moldova",
+                "Moldova"
+              ],
+              [
+                "Monaco",
+                "Monaco"
+              ],
+              [
+                "Mongolia",
+                "Mongolia"
+              ],
+              [
+                "Montenegro",
+                "Montenegro"
+              ],
+              [
+                "Montserrat",
+                "Montserrat"
+              ],
+              [
+                "Morocco",
+                "Morocco"
+              ],
+              [
+                "Mozambique",
+                "Mozambique"
+              ],
+              [
+                "Myanmar",
+                "Myanmar"
+              ],
+              [
+                "Nagorno-Karabakh",
+                "Nagorno-Karabakh"
+              ],
+              [
+                "Namibia",
+                "Namibia"
+              ],
+              [
+                "Nauru",
+                "Nauru"
+              ],
+              [
+                "Nepal",
+                "Nepal"
+              ],
+              [
+                "Netherlands",
+                "Netherlands"
+              ],
+              [
+                "Netherlands Antilles",
+                "Netherlands Antilles"
+              ],
+              [
+                "New Caledonia",
+                "New Caledonia"
+              ],
+              [
+                "New Zealand",
+                "New Zealand"
+              ],
+              [
+                "Nicaragua",
+                "Nicaragua"
+              ],
+              [
+                "Niger",
+                "Niger"
+              ],
+              [
+                "Nigeria",
+                "Nigeria"
+              ],
+              [
+                "Niue",
+                "Niue"
+              ],
+              [
+                "Norfolk Island",
+                "Norfolk Island"
+              ],
+              [
+                "Turkish Republic of Northern Cyprus",
+                "Turkish Republic of Northern Cyprus"
+              ],
+              [
+                "Northern Mariana",
+                "Northern Mariana"
+              ],
+              [
+                "Norway",
+                "Norway"
+              ],
+              [
+                "Oman",
+                "Oman"
+              ],
+              [
+                "Pakistan",
+                "Pakistan"
+              ],
+              [
+                "Palau",
+                "Palau"
+              ],
+              [
+                "Palestine",
+                "Palestine"
+              ],
+              [
+                "Panama",
+                "Panama"
+              ],
+              [
+                "Papua New Guinea",
+                "Papua New Guinea"
+              ],
+              [
+                "Paraguay",
+                "Paraguay"
+              ],
+              [
+                "Peru",
+                "Peru"
+              ],
+              [
+                "Philippines",
+                "Philippines"
+              ],
+              [
+                "Pitcairn Islands",
+                "Pitcairn Islands"
+              ],
+              [
+                "Poland",
+                "Poland"
+              ],
+              [
+                "Portugal",
+                "Portugal"
+              ],
+              [
+                "Puerto Rico",
+                "Puerto Rico"
+              ],
+              [
+                "Qatar",
+                "Qatar"
+              ],
+              [
+                "Republic of the Congo",
+                "Republic of the Congo"
+              ],
+              [
+                "Romania",
+                "Romania"
+              ],
+              [
+                "Russia",
+                "Russia"
+              ],
+              [
+                "Rwanda",
+                "Rwanda"
+              ],
+              [
+                "Saint Barthelemy",
+                "Saint Barthelemy"
+              ],
+              [
+                "Saint Helena",
+                "Saint Helena"
+              ],
+              [
+                "Saint Kitts and Nevis",
+                "Saint Kitts and Nevis"
+              ],
+              [
+                "Saint Lucia",
+                "Saint Lucia"
+              ],
+              [
+                "Saint Martin",
+                "Saint Martin"
+              ],
+              [
+                "Saint Pierre and Miquelon",
+                "Saint Pierre and Miquelon"
+              ],
+              [
+                "Saint Vincent and the Grenadines",
+                "Saint Vincent and the Grenadines"
+              ],
+              [
+                "Samoa",
+                "Samoa"
+              ],
+              [
+                "San Marino",
+                "San Marino"
+              ],
+              [
+                "Sao Tome and Principe",
+                "Sao Tome and Principe"
+              ],
+              [
+                "Saudi Arabia",
+                "Saudi Arabia"
+              ],
+              [
+                "Senegal",
+                "Senegal"
+              ],
+              [
+                "Serbia",
+                "Serbia"
+              ],
+              [
+                "Seychelles",
+                "Seychelles"
+              ],
+              [
+                "Sierra Leone",
+                "Sierra Leone"
+              ],
+              [
+                "Singapore",
+                "Singapore"
+              ],
+              [
+                "Slovakia",
+                "Slovakia"
+              ],
+              [
+                "Slovenia",
+                "Slovenia"
+              ],
+              [
+                "Solomon Islands",
+                "Solomon Islands"
+              ],
+              [
+                "Somalia",
+                "Somalia"
+              ],
+              [
+                "Somaliland",
+                "Somaliland"
+              ],
+              [
+                "South Africa",
+                "South Africa"
+              ],
+              [
+                "South Ossetia",
+                "South Ossetia"
+              ],
+              [
+                "South Sudan",
+                "South Sudan"
+              ],
+              [
+                "Spain",
+                "Spain"
+              ],
+              [
+                "Sri Lanka",
+                "Sri Lanka"
+              ],
+              [
+                "Sudan",
+                "Sudan"
+              ],
+              [
+                "Suriname",
+                "Suriname"
+              ],
+              [
+                "Svalbard",
+                "Svalbard"
+              ],
+              [
+                "eSwatini",
+                "eSwatini"
+              ],
+              [
+                "Sweden",
+                "Sweden"
+              ],
+              [
+                "Switzerland",
+                "Switzerland"
+              ],
+              [
+                "Syria",
+                "Syria"
+              ],
+              [
+                "Taiwan",
+                "Taiwan"
+              ],
+              [
+                "Tajikistan",
+                "Tajikistan"
+              ],
+              [
+                "Tanzania",
+                "Tanzania"
+              ],
+              [
+                "Thailand",
+                "Thailand"
+              ],
+              [
+                "Timor-Leste",
+                "Timor-Leste"
+              ],
+              [
+                "Togo",
+                "Togo"
+              ],
+              [
+                "Tokelau",
+                "Tokelau"
+              ],
+              [
+                "Tonga",
+                "Tonga"
+              ],
+              [
+                "Transnistria Pridnestrovie",
+                "Transnistria Pridnestrovie"
+              ],
+              [
+                "Trinidad and Tobago",
+                "Trinidad and Tobago"
+              ],
+              [
+                "Tristan da Cunha",
+                "Tristan da Cunha"
+              ],
+              [
+                "Tunisia",
+                "Tunisia"
+              ],
+              [
+                "Turkey",
+                "Turkey"
+              ],
+              [
+                "Turkmenistan",
+                "Turkmenistan"
+              ],
+              [
+                "Turks and Caicos Islands",
+                "Turks and Caicos Islands"
+              ],
+              [
+                "Tuvalu",
+                "Tuvalu"
+              ],
+              [
+                "Uganda",
+                "Uganda"
+              ],
+              [
+                "Ukraine",
+                "Ukraine"
+              ],
+              [
+                "United Arab Emirates",
+                "United Arab Emirates"
+              ],
+              [
+                "United Kingdom",
+                "United Kingdom"
+              ],
+              [
+                "Uruguay",
+                "Uruguay"
+              ],
+              [
+                "Uzbekistan",
+                "Uzbekistan"
+              ],
+              [
+                "Vanuatu",
+                "Vanuatu"
+              ],
+              [
+                "Vatican City",
+                "Vatican City"
+              ],
+              [
+                "Venezuela",
+                "Venezuela"
+              ],
+              [
+                "Vietnam",
+                "Vietnam"
+              ],
+              [
+                "British Virgin Islands",
+                "British Virgin Islands"
+              ],
+              [
+                "Isle of Man",
+                "Isle of Man"
+              ],
+              [
+                "US Virgin Islands",
+                "US Virgin Islands"
+              ],
+              [
+                "Wallis and Futuna",
+                "Wallis and Futuna"
+              ],
+              [
+                "Western Sahara",
+                "Western Sahara"
+              ],
+              [
+                "Yemen",
+                "Yemen"
+              ],
+              [
+                "Zambia",
+                "Zambia"
+              ],
+              [
+                "Zimbabwe",
+                "Zimbabwe"
+              ],
+              [
+                "other",
+                "Other"
+              ]
+            ],
+            "selected": [
+              [
+                "United States",
+                "United States"
+              ]
+            ]
+          },
+          "validation": {}
+        },
+        {
+          "selector": "#input_65_0",
+          "id": "input_65_0",
+          "name": "q65_canYou65",
+          "type": "radio",
+          "inputType": "radio",
+          "labels": {
+            "directLabel": "Yes",
+            "groupLabel": "Are you authorized to work in the United States?",
+            "placeholder": "",
+            "contextText": "Yes"
+          },
+          "value": true,
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_65_1",
+          "id": "input_65_1",
+          "name": "q65_canYou65",
           "type": "radio",
           "inputType": "radio",
           "labels": {
             "directLabel": "No",
-            "groupLabel": "Are you currently legally entitled to work in the country where the job is based?",
+            "groupLabel": "Are you authorized to work in the United States?",
             "placeholder": "",
             "contextText": "No"
           },
@@ -377,12 +2092,1487 @@ parsed_data_json = r'''
           "validation": {}
         },
         {
-          "selector": "#input_14",
-          "id": "input_14",
-          "name": "q14_ifApplicable14",
-          "type": "textarea",
+          "selector": "#input_78_0",
+          "id": "input_78_0",
+          "name": "q78_selectThe[]",
+          "type": "checkbox",
+          "inputType": "checkbox",
           "labels": {
-            "directLabel": "If applicable, please detail any restrictions:",
+            "directLabel": "Monday",
+            "groupLabel": "Select the day(s) you're available for work",
+            "placeholder": "",
+            "contextText": "Monday"
+          },
+          "value": true,
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_78_1",
+          "id": "input_78_1",
+          "name": "q78_selectThe[]",
+          "type": "checkbox",
+          "inputType": "checkbox",
+          "labels": {
+            "directLabel": "Tuesday",
+            "groupLabel": "Select the day(s) you're available for work",
+            "placeholder": "",
+            "contextText": "Tuesday"
+          },
+          "value": true,
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_78_2",
+          "id": "input_78_2",
+          "name": "q78_selectThe[]",
+          "type": "checkbox",
+          "inputType": "checkbox",
+          "labels": {
+            "directLabel": "Wednesday",
+            "groupLabel": "Select the day(s) you're available for work",
+            "placeholder": "",
+            "contextText": "Wednesday"
+          },
+          "value": true,
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_78_3",
+          "id": "input_78_3",
+          "name": "q78_selectThe[]",
+          "type": "checkbox",
+          "inputType": "checkbox",
+          "labels": {
+            "directLabel": "Thursday",
+            "groupLabel": "Select the day(s) you're available for work",
+            "placeholder": "",
+            "contextText": "Thursday"
+          },
+          "value": true,
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_78_4",
+          "id": "input_78_4",
+          "name": "q78_selectThe[]",
+          "type": "checkbox",
+          "inputType": "checkbox",
+          "labels": {
+            "directLabel": "Friday",
+            "groupLabel": "Select the day(s) you're available for work",
+            "placeholder": "",
+            "contextText": "Friday"
+          },
+          "value": true,
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_79",
+          "id": "input_79",
+          "name": "q79_listYour",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "List your available hours for work",
+            "placeholder": ""
+          },
+          "value": "9 AM - 5 PM",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Education",
+      "fields": [
+        {
+          "selector": "#input_64",
+          "id": "input_64",
+          "name": "q64_nameOf",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Name of College",
+            "placeholder": " "
+          },
+          "value": "State University",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_16_addr_line1",
+          "id": "input_16_addr_line1",
+          "name": "q16_schoolAddress[addr_line1]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "School Address",
+            "placeholder": "",
+            "contextText": "Street Address"
+          },
+          "value": "State University Campus, Building A, Room 101",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 100
+          }
+        },
+        {
+          "selector": "#input_16_addr_line2",
+          "id": "input_16_addr_line2",
+          "name": "q16_schoolAddress[addr_line2]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Street Address Line 2",
+            "placeholder": "",
+            "contextText": "Street Address Line 2"
+          },
+          "value": "Room 101, Education City",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 100
+          }
+        },
+        {
+          "selector": "#input_16_city",
+          "id": "input_16_city",
+          "name": "q16_schoolAddress[city]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "City",
+            "placeholder": "",
+            "contextText": "City"
+          },
+          "value": "Education City",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 60
+          }
+        },
+        {
+          "selector": "#input_16_state",
+          "id": "input_16_state",
+          "name": "q16_schoolAddress[state]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "State / Province",
+            "placeholder": "",
+            "contextText": "State / Province"
+          },
+          "value": "California",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 60
+          }
+        },
+        {
+          "selector": "#input_16_postal",
+          "id": "input_16_postal",
+          "name": "q16_schoolAddress[postal]",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Postal / Zip Code",
+            "placeholder": "",
+            "contextText": "Postal / Zip Code"
+          },
+          "value": "90210",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 20
+          }
+        },
+        {
+          "selector": "#input_16_country",
+          "id": "input_16_country",
+          "name": "q16_schoolAddress[country]",
+          "type": "select-one",
+          "labels": {
+            "directLabel": "Country",
+            "contextText": "Country"
+          },
+          "value": "United States",
+          "isEmpty": false,
+          "isRequired": true,
+          "options": {
+            "unselected": [
+              [
+                "",
+                "Please Select"
+              ],
+              [
+                "Afghanistan",
+                "Afghanistan"
+              ],
+              [
+                "Albania",
+                "Albania"
+              ],
+              [
+                "Algeria",
+                "Algeria"
+              ],
+              [
+                "American Samoa",
+                "American Samoa"
+              ],
+              [
+                "Andorra",
+                "Andorra"
+              ],
+              [
+                "Angola",
+                "Angola"
+              ],
+              [
+                "Anguilla",
+                "Anguilla"
+              ],
+              [
+                "Antigua and Barbuda",
+                "Antigua and Barbuda"
+              ],
+              [
+                "Argentina",
+                "Argentina"
+              ],
+              [
+                "Armenia",
+                "Armenia"
+              ],
+              [
+                "Aruba",
+                "Aruba"
+              ],
+              [
+                "Australia",
+                "Australia"
+              ],
+              [
+                "Austria",
+                "Austria"
+              ],
+              [
+                "Azerbaijan",
+                "Azerbaijan"
+              ],
+              [
+                "The Bahamas",
+                "The Bahamas"
+              ],
+              [
+                "Bahrain",
+                "Bahrain"
+              ],
+              [
+                "Bangladesh",
+                "Bangladesh"
+              ],
+              [
+                "Barbados",
+                "Barbados"
+              ],
+              [
+                "Belarus",
+                "Belarus"
+              ],
+              [
+                "Belgium",
+                "Belgium"
+              ],
+              [
+                "Belize",
+                "Belize"
+              ],
+              [
+                "Benin",
+                "Benin"
+              ],
+              [
+                "Bermuda",
+                "Bermuda"
+              ],
+              [
+                "Bhutan",
+                "Bhutan"
+              ],
+              [
+                "Bolivia",
+                "Bolivia"
+              ],
+              [
+                "Bosnia and Herzegovina",
+                "Bosnia and Herzegovina"
+              ],
+              [
+                "Botswana",
+                "Botswana"
+              ],
+              [
+                "Brazil",
+                "Brazil"
+              ],
+              [
+                "Brunei",
+                "Brunei"
+              ],
+              [
+                "Bulgaria",
+                "Bulgaria"
+              ],
+              [
+                "Burkina Faso",
+                "Burkina Faso"
+              ],
+              [
+                "Burundi",
+                "Burundi"
+              ],
+              [
+                "Cambodia",
+                "Cambodia"
+              ],
+              [
+                "Cameroon",
+                "Cameroon"
+              ],
+              [
+                "Canada",
+                "Canada"
+              ],
+              [
+                "Cape Verde",
+                "Cape Verde"
+              ],
+              [
+                "Cayman Islands",
+                "Cayman Islands"
+              ],
+              [
+                "Central African Republic",
+                "Central African Republic"
+              ],
+              [
+                "Chad",
+                "Chad"
+              ],
+              [
+                "Chile",
+                "Chile"
+              ],
+              [
+                "China",
+                "China"
+              ],
+              [
+                "Christmas Island",
+                "Christmas Island"
+              ],
+              [
+                "Cocos (Keeling) Islands",
+                "Cocos (Keeling) Islands"
+              ],
+              [
+                "Colombia",
+                "Colombia"
+              ],
+              [
+                "Comoros",
+                "Comoros"
+              ],
+              [
+                "Congo",
+                "Congo"
+              ],
+              [
+                "Cook Islands",
+                "Cook Islands"
+              ],
+              [
+                "Costa Rica",
+                "Costa Rica"
+              ],
+              [
+                "Cote d'Ivoire",
+                "Cote d'Ivoire"
+              ],
+              [
+                "Croatia",
+                "Croatia"
+              ],
+              [
+                "Cuba",
+                "Cuba"
+              ],
+              [
+                "Curaçao",
+                "Curaçao"
+              ],
+              [
+                "Cyprus",
+                "Cyprus"
+              ],
+              [
+                "Czech Republic",
+                "Czech Republic"
+              ],
+              [
+                "Democratic Republic of the Congo",
+                "Democratic Republic of the Congo"
+              ],
+              [
+                "Denmark",
+                "Denmark"
+              ],
+              [
+                "Djibouti",
+                "Djibouti"
+              ],
+              [
+                "Dominica",
+                "Dominica"
+              ],
+              [
+                "Dominican Republic",
+                "Dominican Republic"
+              ],
+              [
+                "Ecuador",
+                "Ecuador"
+              ],
+              [
+                "Egypt",
+                "Egypt"
+              ],
+              [
+                "El Salvador",
+                "El Salvador"
+              ],
+              [
+                "Equatorial Guinea",
+                "Equatorial Guinea"
+              ],
+              [
+                "Eritrea",
+                "Eritrea"
+              ],
+              [
+                "Estonia",
+                "Estonia"
+              ],
+              [
+                "Ethiopia",
+                "Ethiopia"
+              ],
+              [
+                "Falkland Islands",
+                "Falkland Islands"
+              ],
+              [
+                "Faroe Islands",
+                "Faroe Islands"
+              ],
+              [
+                "Fiji",
+                "Fiji"
+              ],
+              [
+                "Finland",
+                "Finland"
+              ],
+              [
+                "France",
+                "France"
+              ],
+              [
+                "French Polynesia",
+                "French Polynesia"
+              ],
+              [
+                "Gabon",
+                "Gabon"
+              ],
+              [
+                "The Gambia",
+                "The Gambia"
+              ],
+              [
+                "Georgia",
+                "Georgia"
+              ],
+              [
+                "Germany",
+                "Germany"
+              ],
+              [
+                "Ghana",
+                "Ghana"
+              ],
+              [
+                "Gibraltar",
+                "Gibraltar"
+              ],
+              [
+                "Greece",
+                "Greece"
+              ],
+              [
+                "Greenland",
+                "Greenland"
+              ],
+              [
+                "Grenada",
+                "Grenada"
+              ],
+              [
+                "Guadeloupe",
+                "Guadeloupe"
+              ],
+              [
+                "Guam",
+                "Guam"
+              ],
+              [
+                "Guatemala",
+                "Guatemala"
+              ],
+              [
+                "Guernsey",
+                "Guernsey"
+              ],
+              [
+                "Guinea",
+                "Guinea"
+              ],
+              [
+                "Guinea-Bissau",
+                "Guinea-Bissau"
+              ],
+              [
+                "Guyana",
+                "Guyana"
+              ],
+              [
+                "Haiti",
+                "Haiti"
+              ],
+              [
+                "Honduras",
+                "Honduras"
+              ],
+              [
+                "Hong Kong",
+                "Hong Kong"
+              ],
+              [
+                "Hungary",
+                "Hungary"
+              ],
+              [
+                "Iceland",
+                "Iceland"
+              ],
+              [
+                "India",
+                "India"
+              ],
+              [
+                "Indonesia",
+                "Indonesia"
+              ],
+              [
+                "Iran",
+                "Iran"
+              ],
+              [
+                "Iraq",
+                "Iraq"
+              ],
+              [
+                "Ireland",
+                "Ireland"
+              ],
+              [
+                "Israel",
+                "Israel"
+              ],
+              [
+                "Italy",
+                "Italy"
+              ],
+              [
+                "Jamaica",
+                "Jamaica"
+              ],
+              [
+                "Japan",
+                "Japan"
+              ],
+              [
+                "Jersey",
+                "Jersey"
+              ],
+              [
+                "Jordan",
+                "Jordan"
+              ],
+              [
+                "Kazakhstan",
+                "Kazakhstan"
+              ],
+              [
+                "Kenya",
+                "Kenya"
+              ],
+              [
+                "Kiribati",
+                "Kiribati"
+              ],
+              [
+                "North Korea",
+                "North Korea"
+              ],
+              [
+                "South Korea",
+                "South Korea"
+              ],
+              [
+                "Kosovo",
+                "Kosovo"
+              ],
+              [
+                "Kuwait",
+                "Kuwait"
+              ],
+              [
+                "Kyrgyzstan",
+                "Kyrgyzstan"
+              ],
+              [
+                "Laos",
+                "Laos"
+              ],
+              [
+                "Latvia",
+                "Latvia"
+              ],
+              [
+                "Lebanon",
+                "Lebanon"
+              ],
+              [
+                "Lesotho",
+                "Lesotho"
+              ],
+              [
+                "Liberia",
+                "Liberia"
+              ],
+              [
+                "Libya",
+                "Libya"
+              ],
+              [
+                "Liechtenstein",
+                "Liechtenstein"
+              ],
+              [
+                "Lithuania",
+                "Lithuania"
+              ],
+              [
+                "Luxembourg",
+                "Luxembourg"
+              ],
+              [
+                "Macau",
+                "Macau"
+              ],
+              [
+                "Macedonia",
+                "Macedonia"
+              ],
+              [
+                "Madagascar",
+                "Madagascar"
+              ],
+              [
+                "Malawi",
+                "Malawi"
+              ],
+              [
+                "Malaysia",
+                "Malaysia"
+              ],
+              [
+                "Maldives",
+                "Maldives"
+              ],
+              [
+                "Mali",
+                "Mali"
+              ],
+              [
+                "Malta",
+                "Malta"
+              ],
+              [
+                "Marshall Islands",
+                "Marshall Islands"
+              ],
+              [
+                "Martinique",
+                "Martinique"
+              ],
+              [
+                "Mauritania",
+                "Mauritania"
+              ],
+              [
+                "Mauritius",
+                "Mauritius"
+              ],
+              [
+                "Mayotte",
+                "Mayotte"
+              ],
+              [
+                "Mexico",
+                "Mexico"
+              ],
+              [
+                "Micronesia",
+                "Micronesia"
+              ],
+              [
+                "Moldova",
+                "Moldova"
+              ],
+              [
+                "Monaco",
+                "Monaco"
+              ],
+              [
+                "Mongolia",
+                "Mongolia"
+              ],
+              [
+                "Montenegro",
+                "Montenegro"
+              ],
+              [
+                "Montserrat",
+                "Montserrat"
+              ],
+              [
+                "Morocco",
+                "Morocco"
+              ],
+              [
+                "Mozambique",
+                "Mozambique"
+              ],
+              [
+                "Myanmar",
+                "Myanmar"
+              ],
+              [
+                "Nagorno-Karabakh",
+                "Nagorno-Karabakh"
+              ],
+              [
+                "Namibia",
+                "Namibia"
+              ],
+              [
+                "Nauru",
+                "Nauru"
+              ],
+              [
+                "Nepal",
+                "Nepal"
+              ],
+              [
+                "Netherlands",
+                "Netherlands"
+              ],
+              [
+                "Netherlands Antilles",
+                "Netherlands Antilles"
+              ],
+              [
+                "New Caledonia",
+                "New Caledonia"
+              ],
+              [
+                "New Zealand",
+                "New Zealand"
+              ],
+              [
+                "Nicaragua",
+                "Nicaragua"
+              ],
+              [
+                "Niger",
+                "Niger"
+              ],
+              [
+                "Nigeria",
+                "Nigeria"
+              ],
+              [
+                "Niue",
+                "Niue"
+              ],
+              [
+                "Norfolk Island",
+                "Norfolk Island"
+              ],
+              [
+                "Turkish Republic of Northern Cyprus",
+                "Turkish Republic of Northern Cyprus"
+              ],
+              [
+                "Northern Mariana",
+                "Northern Mariana"
+              ],
+              [
+                "Norway",
+                "Norway"
+              ],
+              [
+                "Oman",
+                "Oman"
+              ],
+              [
+                "Pakistan",
+                "Pakistan"
+              ],
+              [
+                "Palau",
+                "Palau"
+              ],
+              [
+                "Palestine",
+                "Palestine"
+              ],
+              [
+                "Panama",
+                "Panama"
+              ],
+              [
+                "Papua New Guinea",
+                "Papua New Guinea"
+              ],
+              [
+                "Paraguay",
+                "Paraguay"
+              ],
+              [
+                "Peru",
+                "Peru"
+              ],
+              [
+                "Philippines",
+                "Philippines"
+              ],
+              [
+                "Pitcairn Islands",
+                "Pitcairn Islands"
+              ],
+              [
+                "Poland",
+                "Poland"
+              ],
+              [
+                "Portugal",
+                "Portugal"
+              ],
+              [
+                "Puerto Rico",
+                "Puerto Rico"
+              ],
+              [
+                "Qatar",
+                "Qatar"
+              ],
+              [
+                "Republic of the Congo",
+                "Republic of the Congo"
+              ],
+              [
+                "Romania",
+                "Romania"
+              ],
+              [
+                "Russia",
+                "Russia"
+              ],
+              [
+                "Rwanda",
+                "Rwanda"
+              ],
+              [
+                "Saint Barthelemy",
+                "Saint Barthelemy"
+              ],
+              [
+                "Saint Helena",
+                "Saint Helena"
+              ],
+              [
+                "Saint Kitts and Nevis",
+                "Saint Kitts and Nevis"
+              ],
+              [
+                "Saint Lucia",
+                "Saint Lucia"
+              ],
+              [
+                "Saint Martin",
+                "Saint Martin"
+              ],
+              [
+                "Saint Pierre and Miquelon",
+                "Saint Pierre and Miquelon"
+              ],
+              [
+                "Saint Vincent and the Grenadines",
+                "Saint Vincent and the Grenadines"
+              ],
+              [
+                "Samoa",
+                "Samoa"
+              ],
+              [
+                "San Marino",
+                "San Marino"
+              ],
+              [
+                "Sao Tome and Principe",
+                "Sao Tome and Principe"
+              ],
+              [
+                "Saudi Arabia",
+                "Saudi Arabia"
+              ],
+              [
+                "Senegal",
+                "Senegal"
+              ],
+              [
+                "Serbia",
+                "Serbia"
+              ],
+              [
+                "Seychelles",
+                "Seychelles"
+              ],
+              [
+                "Sierra Leone",
+                "Sierra Leone"
+              ],
+              [
+                "Singapore",
+                "Singapore"
+              ],
+              [
+                "Slovakia",
+                "Slovakia"
+              ],
+              [
+                "Slovenia",
+                "Slovenia"
+              ],
+              [
+                "Solomon Islands",
+                "Solomon Islands"
+              ],
+              [
+                "Somalia",
+                "Somalia"
+              ],
+              [
+                "Somaliland",
+                "Somaliland"
+              ],
+              [
+                "South Africa",
+                "South Africa"
+              ],
+              [
+                "South Ossetia",
+                "South Ossetia"
+              ],
+              [
+                "South Sudan",
+                "South Sudan"
+              ],
+              [
+                "Spain",
+                "Spain"
+              ],
+              [
+                "Sri Lanka",
+                "Sri Lanka"
+              ],
+              [
+                "Sudan",
+                "Sudan"
+              ],
+              [
+                "Suriname",
+                "Suriname"
+              ],
+              [
+                "Svalbard",
+                "Svalbard"
+              ],
+              [
+                "eSwatini",
+                "eSwatini"
+              ],
+              [
+                "Sweden",
+                "Sweden"
+              ],
+              [
+                "Switzerland",
+                "Switzerland"
+              ],
+              [
+                "Syria",
+                "Syria"
+              ],
+              [
+                "Taiwan",
+                "Taiwan"
+              ],
+              [
+                "Tajikistan",
+                "Tajikistan"
+              ],
+              [
+                "Tanzania",
+                "Tanzania"
+              ],
+              [
+                "Thailand",
+                "Thailand"
+              ],
+              [
+                "Timor-Leste",
+                "Timor-Leste"
+              ],
+              [
+                "Togo",
+                "Togo"
+              ],
+              [
+                "Tokelau",
+                "Tokelau"
+              ],
+              [
+                "Tonga",
+                "Tonga"
+              ],
+              [
+                "Transnistria Pridnestrovie",
+                "Transnistria Pridnestrovie"
+              ],
+              [
+                "Trinidad and Tobago",
+                "Trinidad and Tobago"
+              ],
+              [
+                "Tristan da Cunha",
+                "Tristan da Cunha"
+              ],
+              [
+                "Tunisia",
+                "Tunisia"
+              ],
+              [
+                "Turkey",
+                "Turkey"
+              ],
+              [
+                "Turkmenistan",
+                "Turkmenistan"
+              ],
+              [
+                "Turks and Caicos Islands",
+                "Turks and Caicos Islands"
+              ],
+              [
+                "Tuvalu",
+                "Tuvalu"
+              ],
+              [
+                "Uganda",
+                "Uganda"
+              ],
+              [
+                "Ukraine",
+                "Ukraine"
+              ],
+              [
+                "United Arab Emirates",
+                "United Arab Emirates"
+              ],
+              [
+                "United Kingdom",
+                "United Kingdom"
+              ],
+              [
+                "Uruguay",
+                "Uruguay"
+              ],
+              [
+                "Uzbekistan",
+                "Uzbekistan"
+              ],
+              [
+                "Vanuatu",
+                "Vanuatu"
+              ],
+              [
+                "Vatican City",
+                "Vatican City"
+              ],
+              [
+                "Venezuela",
+                "Venezuela"
+              ],
+              [
+                "Vietnam",
+                "Vietnam"
+              ],
+              [
+                "British Virgin Islands",
+                "British Virgin Islands"
+              ],
+              [
+                "Isle of Man",
+                "Isle of Man"
+              ],
+              [
+                "US Virgin Islands",
+                "US Virgin Islands"
+              ],
+              [
+                "Wallis and Futuna",
+                "Wallis and Futuna"
+              ],
+              [
+                "Western Sahara",
+                "Western Sahara"
+              ],
+              [
+                "Yemen",
+                "Yemen"
+              ],
+              [
+                "Zambia",
+                "Zambia"
+              ],
+              [
+                "Zimbabwe",
+                "Zimbabwe"
+              ],
+              [
+                "other",
+                "Other"
+              ]
+            ],
+            "selected": [
+              [
+                "United States",
+                "United States"
+              ]
+            ]
+          },
+          "validation": {}
+        },
+        {
+          "selector": "#input_56",
+          "id": "input_56",
+          "name": "q56_major",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Major",
+            "placeholder": " "
+          },
+          "value": "Computer Science",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_68",
+          "id": "input_68",
+          "name": "q68_year",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Year",
+            "placeholder": ""
+          },
+          "value": "2026",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_60",
+          "id": "input_60",
+          "name": "q60_otherColleges60",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Other College(s) info",
+            "placeholder": " "
+          },
+          "value": "",
+          "isEmpty": true,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_24",
+          "id": "input_24",
+          "name": "q24_highSchool",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "High School - City - Dates",
+            "placeholder": " "
+          },
+          "value": "",
+          "isEmpty": true,
+          "isRequired": false,
+          "validation": {}
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "heading": "Employment",
+      "fields": [
+        {
+          "selector": "#input_44",
+          "id": "input_44",
+          "name": "q44_place44",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Place",
+            "placeholder": " "
+          },
+          "value": "Tech Corp",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#month_69",
+          "id": "month_69",
+          "name": "q69_date[month]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Month",
+            "placeholder": "",
+            "contextText": "-Month"
+          },
+          "value": "11",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 2
+          }
+        },
+        {
+          "selector": "#day_69",
+          "id": "day_69",
+          "name": "q69_date[day]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Day",
+            "placeholder": "",
+            "contextText": "-Day"
+          },
+          "value": "12",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 2
+          }
+        },
+        {
+          "selector": "#year_69",
+          "id": "year_69",
+          "name": "q69_date[year]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Year",
+            "placeholder": "",
+            "contextText": "Year"
+          },
+          "value": "1942",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 4
+          }
+        },
+        {
+          "selector": "#lite_mode_69",
+          "id": "lite_mode_69",
+          "name": "",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Date",
+            "placeholder": "MM-DD-YYYY",
+            "contextText": "Date"
+          },
+          "value": "11-12-1942",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_70",
+          "id": "input_70",
+          "name": "q70_title70",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Title",
+            "placeholder": ""
+          },
+          "value": "Senior Developer",
+          "isEmpty": false,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_45",
+          "id": "input_45",
+          "name": "q45_place",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Place",
+            "placeholder": " "
+          },
+          "value": "",
+          "isEmpty": true,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#month_72",
+          "id": "month_72",
+          "name": "q72_date72[month]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Month",
+            "placeholder": "",
+            "contextText": "-Month"
+          },
+          "value": "",
+          "isEmpty": true,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 2
+          }
+        },
+        {
+          "selector": "#day_72",
+          "id": "day_72",
+          "name": "q72_date72[day]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Day",
+            "placeholder": "",
+            "contextText": "-Day"
+          },
+          "value": "",
+          "isEmpty": true,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 2
+          }
+        },
+        {
+          "selector": "#year_72",
+          "id": "year_72",
+          "name": "q72_date72[year]",
+          "type": "tel",
+          "inputType": "tel",
+          "labels": {
+            "directLabel": "Year",
+            "placeholder": "",
+            "contextText": "Year"
+          },
+          "value": "",
+          "isEmpty": true,
+          "isRequired": false,
+          "validation": {
+            "maxLength": 4
+          }
+        },
+        {
+          "selector": "#lite_mode_72",
+          "id": "lite_mode_72",
+          "name": "",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Date",
+            "placeholder": "MM-DD-YYYY",
+            "contextText": "Date"
+          },
+          "value": "",
+          "isEmpty": true,
+          "isRequired": false,
+          "validation": {}
+        },
+        {
+          "selector": "#input_73",
+          "id": "input_73",
+          "name": "q73_title",
+          "type": "text",
+          "inputType": "text",
+          "labels": {
+            "directLabel": "Title",
             "placeholder": ""
           },
           "value": "",
@@ -391,35 +3581,43 @@ parsed_data_json = r'''
           "validation": {}
         },
         {
-          "selector": "#input_9_0",
-          "id": "input_9_0",
-          "name": "q9_ifSelected",
-          "type": "radio",
-          "inputType": "radio",
+          "selector": "#input_76",
+          "id": "input_76",
+          "name": "file",
+          "type": "file",
+          "inputType": "file",
           "labels": {
-            "directLabel": "Yes",
-            "groupLabel": "If selected for employment are you willing to submit a background check?",
+            "directLabel": "Attach Your CV",
             "placeholder": "",
-            "contextText": "Yes"
+            "precedingLabels": [
+              "Drag and drop files here",
+              "Choose a file",
+              "Drag and drop files here",
+              "Choose a file"
+            ]
           },
-          "value": false,
+          "value": null,
           "isEmpty": true,
           "isRequired": false,
           "validation": {}
         },
         {
-          "selector": "#input_9_1",
-          "id": "input_9_1",
-          "name": "q9_ifSelected",
-          "type": "radio",
-          "inputType": "radio",
+          "selector": "#input_77",
+          "id": "input_77",
+          "name": "file",
+          "type": "file",
+          "inputType": "file",
           "labels": {
-            "directLabel": "No",
-            "groupLabel": "If selected for employment are you willing to submit a background check?",
+            "directLabel": "Attach Cover Letter",
             "placeholder": "",
-            "contextText": "No"
+            "precedingLabels": [
+              "Drag and drop files here",
+              "Choose a file",
+              "Drag and drop files here",
+              "Choose a file"
+            ]
           },
-          "value": false,
+          "value": null,
           "isEmpty": true,
           "isRequired": false,
           "validation": {}
@@ -430,25 +3628,25 @@ parsed_data_json = r'''
   ],
   "allFields": [
     {
-      "selector": "#first_4",
-      "id": "first_4",
-      "name": "q4_name[first]",
+      "selector": "#first_12",
+      "id": "first_12",
+      "name": "q12_fullName12[first]",
       "type": "text",
       "inputType": "text",
       "labels": {
-        "directLabel": "Name",
+        "directLabel": "Full Name",
         "placeholder": "",
         "contextText": "First Name"
       },
-      "value": "",
-      "isEmpty": true,
+      "value": "John",
+      "isEmpty": false,
       "isRequired": false,
       "validation": {}
     },
     {
-      "selector": "#last_4",
-      "id": "last_4",
-      "name": "q4_name[last]",
+      "selector": "#last_12",
+      "id": "last_12",
+      "name": "q12_fullName12[last]",
       "type": "text",
       "inputType": "text",
       "labels": {
@@ -456,187 +3654,54 @@ parsed_data_json = r'''
         "placeholder": "",
         "contextText": "Last Name"
       },
-      "value": "",
-      "isEmpty": true,
+      "value": "Doe",
+      "isEmpty": false,
       "isRequired": false,
       "validation": {}
     },
     {
-      "selector": "#input_5_full",
-      "id": "input_5_full",
-      "name": "q5_phoneNumber[full]",
-      "type": "tel",
-      "inputType": "tel",
+      "selector": "#input_54",
+      "id": "input_54",
+      "name": "q54_preferredName54",
+      "type": "text",
+      "inputType": "text",
       "labels": {
-        "directLabel": "Phone Number",
-        "placeholder": "(000) 000-0000"
+        "directLabel": "Preferred Name",
+        "placeholder": " "
       },
-      "value": "",
-      "isEmpty": true,
+      "value": "Johnny",
+      "isEmpty": false,
       "isRequired": false,
       "validation": {}
     },
     {
-      "selector": "#input_6",
-      "id": "input_6",
-      "name": "q6_email",
-      "type": "email",
-      "inputType": "email",
+      "selector": "#input_20_0",
+      "id": "input_20_0",
+      "name": "q20_gender20[]",
+      "type": "checkbox",
+      "inputType": "checkbox",
       "labels": {
-        "directLabel": "Email",
+        "directLabel": "Male",
+        "groupLabel": "Gender",
         "placeholder": "",
-        "contextText": "example@example.com"
+        "contextText": "Male"
       },
-      "value": "",
-      "isEmpty": true,
+      "value": true,
+      "isEmpty": false,
       "isRequired": false,
       "validation": {}
     },
     {
-      "selector": "#input_7_addr_line1",
-      "id": "input_7_addr_line1",
-      "name": "q7_address[addr_line1]",
-      "type": "text",
-      "inputType": "text",
+      "selector": "#input_20_1",
+      "id": "input_20_1",
+      "name": "q20_gender20[]",
+      "type": "checkbox",
+      "inputType": "checkbox",
       "labels": {
-        "directLabel": "Address",
+        "directLabel": "Female",
+        "groupLabel": "Gender",
         "placeholder": "",
-        "contextText": "Street Address"
-      },
-      "value": "",
-      "isEmpty": true,
-      "isRequired": false,
-      "validation": {
-        "maxLength": 100
-      }
-    },
-    {
-      "selector": "#input_7_addr_line2",
-      "id": "input_7_addr_line2",
-      "name": "q7_address[addr_line2]",
-      "type": "text",
-      "inputType": "text",
-      "labels": {
-        "directLabel": "Street Address Line 2",
-        "placeholder": "",
-        "contextText": "Street Address Line 2"
-      },
-      "value": "",
-      "isEmpty": true,
-      "isRequired": false,
-      "validation": {
-        "maxLength": 100
-      }
-    },
-    {
-      "selector": "#input_7_city",
-      "id": "input_7_city",
-      "name": "q7_address[city]",
-      "type": "text",
-      "inputType": "text",
-      "labels": {
-        "directLabel": "City",
-        "placeholder": "",
-        "contextText": "City"
-      },
-      "value": "",
-      "isEmpty": true,
-      "isRequired": false,
-      "validation": {
-        "maxLength": 60
-      }
-    },
-    {
-      "selector": "#input_7_state",
-      "id": "input_7_state",
-      "name": "q7_address[state]",
-      "type": "text",
-      "inputType": "text",
-      "labels": {
-        "directLabel": "State / Province",
-        "placeholder": "",
-        "contextText": "State / Province"
-      },
-      "value": "",
-      "isEmpty": true,
-      "isRequired": false,
-      "validation": {
-        "maxLength": 60
-      }
-    },
-    {
-      "selector": "#input_7_postal",
-      "id": "input_7_postal",
-      "name": "q7_address[postal]",
-      "type": "text",
-      "inputType": "text",
-      "labels": {
-        "directLabel": "Postal / Zip Code",
-        "placeholder": "",
-        "contextText": "Postal / Zip Code"
-      },
-      "value": "",
-      "isEmpty": true,
-      "isRequired": false,
-      "validation": {
-        "maxLength": 20
-      }
-    },
-    {
-      "selector": "#input_10",
-      "id": "input_10",
-      "name": "q10_whatIs",
-      "type": "select-one",
-      "labels": {
-        "directLabel": "What is the best time to contact you?",
-        "ariaLabel": "What is the best time to contact you?"
-      },
-      "value": "",
-      "isEmpty": true,
-      "isRequired": false,
-      "options": {
-        "unselected": [
-          [
-            "Morning",
-            "Morning"
-          ],
-          [
-            "Lunch Time",
-            "Lunch Time"
-          ],
-          [
-            "Evening",
-            "Evening"
-          ],
-          [
-            "Afternoon",
-            "Afternoon"
-          ],
-          [
-            "Doesn't Matter",
-            "Doesn't Matter"
-          ]
-        ],
-        "selected": [
-          [
-            "",
-            "Please Select"
-          ]
-        ]
-      },
-      "validation": {}
-    },
-    {
-      "selector": "#input_8_0",
-      "id": "input_8_0",
-      "name": "q8_areYou8",
-      "type": "radio",
-      "inputType": "radio",
-      "labels": {
-        "directLabel": "Yes",
-        "groupLabel": "Are you currently legally entitled to work in the country where the job is based?",
-        "placeholder": "",
-        "contextText": "Yes"
+        "contextText": "Female"
       },
       "value": false,
       "isEmpty": true,
@@ -644,14 +3709,1862 @@ parsed_data_json = r'''
       "validation": {}
     },
     {
-      "selector": "#input_8_1",
-      "id": "input_8_1",
-      "name": "q8_areYou8",
+      "selector": "#input_19_month",
+      "id": "input_19_month",
+      "name": "q19_birthDate19[month]",
+      "type": "select-one",
+      "labels": {
+        "directLabel": "Month",
+        "contextText": "Month"
+      },
+      "value": "11",
+      "isEmpty": false,
+      "isRequired": false,
+      "options": {
+        "unselected": [
+          [
+            "",
+            "Please select a month"
+          ],
+          [
+            "1",
+            "January"
+          ],
+          [
+            "2",
+            "February"
+          ],
+          [
+            "3",
+            "March"
+          ],
+          [
+            "4",
+            "April"
+          ],
+          [
+            "5",
+            "May"
+          ],
+          [
+            "6",
+            "June"
+          ],
+          [
+            "7",
+            "July"
+          ],
+          [
+            "8",
+            "August"
+          ],
+          [
+            "9",
+            "September"
+          ],
+          [
+            "10",
+            "October"
+          ],
+          [
+            "12",
+            "December"
+          ]
+        ],
+        "selected": [
+          [
+            "11",
+            "November"
+          ]
+        ]
+      },
+      "validation": {}
+    },
+    {
+      "selector": "#input_19_day",
+      "id": "input_19_day",
+      "name": "q19_birthDate19[day]",
+      "type": "select-one",
+      "labels": {
+        "directLabel": "Day",
+        "contextText": "Day"
+      },
+      "value": "18",
+      "isEmpty": false,
+      "isRequired": false,
+      "options": {
+        "unselected": [
+          [
+            "",
+            "Please select a day"
+          ],
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "3"
+          ],
+          [
+            "4",
+            "4"
+          ],
+          [
+            "5",
+            "5"
+          ],
+          [
+            "6",
+            "6"
+          ],
+          [
+            "7",
+            "7"
+          ],
+          [
+            "8",
+            "8"
+          ],
+          [
+            "9",
+            "9"
+          ],
+          [
+            "10",
+            "10"
+          ],
+          [
+            "11",
+            "11"
+          ],
+          [
+            "12",
+            "12"
+          ],
+          [
+            "13",
+            "13"
+          ],
+          [
+            "14",
+            "14"
+          ],
+          [
+            "15",
+            "15"
+          ],
+          [
+            "16",
+            "16"
+          ],
+          [
+            "17",
+            "17"
+          ],
+          [
+            "19",
+            "19"
+          ],
+          [
+            "20",
+            "20"
+          ],
+          [
+            "21",
+            "21"
+          ],
+          [
+            "22",
+            "22"
+          ],
+          [
+            "23",
+            "23"
+          ],
+          [
+            "24",
+            "24"
+          ],
+          [
+            "25",
+            "25"
+          ],
+          [
+            "26",
+            "26"
+          ],
+          [
+            "27",
+            "27"
+          ],
+          [
+            "28",
+            "28"
+          ],
+          [
+            "29",
+            "29"
+          ],
+          [
+            "30",
+            "30"
+          ],
+          [
+            "31",
+            "31"
+          ]
+        ],
+        "selected": [
+          [
+            "18",
+            "18"
+          ]
+        ]
+      },
+      "validation": {}
+    },
+    {
+      "selector": "#input_19_year",
+      "id": "input_19_year",
+      "name": "q19_birthDate19[year]",
+      "type": "select-one",
+      "labels": {
+        "directLabel": "Year",
+        "contextText": "Year"
+      },
+      "value": "2004",
+      "isEmpty": false,
+      "isRequired": false,
+      "options": {
+        "unselected": [
+          [
+            "",
+            "Please select a year"
+          ],
+          [
+            "2025",
+            "2025"
+          ],
+          [
+            "2024",
+            "2024"
+          ],
+          [
+            "2023",
+            "2023"
+          ],
+          [
+            "2022",
+            "2022"
+          ],
+          [
+            "2021",
+            "2021"
+          ],
+          [
+            "2020",
+            "2020"
+          ],
+          [
+            "2019",
+            "2019"
+          ],
+          [
+            "2018",
+            "2018"
+          ],
+          [
+            "2017",
+            "2017"
+          ],
+          [
+            "2016",
+            "2016"
+          ],
+          [
+            "2015",
+            "2015"
+          ],
+          [
+            "2014",
+            "2014"
+          ],
+          [
+            "2013",
+            "2013"
+          ],
+          [
+            "2012",
+            "2012"
+          ],
+          [
+            "2011",
+            "2011"
+          ],
+          [
+            "2010",
+            "2010"
+          ],
+          [
+            "2009",
+            "2009"
+          ],
+          [
+            "2008",
+            "2008"
+          ],
+          [
+            "2007",
+            "2007"
+          ],
+          [
+            "2006",
+            "2006"
+          ],
+          [
+            "2005",
+            "2005"
+          ],
+          [
+            "2003",
+            "2003"
+          ],
+          [
+            "2002",
+            "2002"
+          ],
+          [
+            "2001",
+            "2001"
+          ],
+          [
+            "2000",
+            "2000"
+          ],
+          [
+            "1999",
+            "1999"
+          ],
+          [
+            "1998",
+            "1998"
+          ],
+          [
+            "1997",
+            "1997"
+          ],
+          [
+            "1996",
+            "1996"
+          ],
+          [
+            "1995",
+            "1995"
+          ],
+          [
+            "1994",
+            "1994"
+          ],
+          [
+            "1993",
+            "1993"
+          ],
+          [
+            "1992",
+            "1992"
+          ],
+          [
+            "1991",
+            "1991"
+          ],
+          [
+            "1990",
+            "1990"
+          ],
+          [
+            "1989",
+            "1989"
+          ],
+          [
+            "1988",
+            "1988"
+          ],
+          [
+            "1987",
+            "1987"
+          ],
+          [
+            "1986",
+            "1986"
+          ],
+          [
+            "1985",
+            "1985"
+          ],
+          [
+            "1984",
+            "1984"
+          ],
+          [
+            "1983",
+            "1983"
+          ],
+          [
+            "1982",
+            "1982"
+          ],
+          [
+            "1981",
+            "1981"
+          ],
+          [
+            "1980",
+            "1980"
+          ],
+          [
+            "1979",
+            "1979"
+          ],
+          [
+            "1978",
+            "1978"
+          ],
+          [
+            "1977",
+            "1977"
+          ],
+          [
+            "1976",
+            "1976"
+          ],
+          [
+            "1975",
+            "1975"
+          ],
+          [
+            "1974",
+            "1974"
+          ],
+          [
+            "1973",
+            "1973"
+          ],
+          [
+            "1972",
+            "1972"
+          ],
+          [
+            "1971",
+            "1971"
+          ],
+          [
+            "1970",
+            "1970"
+          ],
+          [
+            "1969",
+            "1969"
+          ],
+          [
+            "1968",
+            "1968"
+          ],
+          [
+            "1967",
+            "1967"
+          ],
+          [
+            "1966",
+            "1966"
+          ],
+          [
+            "1965",
+            "1965"
+          ],
+          [
+            "1964",
+            "1964"
+          ],
+          [
+            "1963",
+            "1963"
+          ],
+          [
+            "1962",
+            "1962"
+          ],
+          [
+            "1961",
+            "1961"
+          ],
+          [
+            "1960",
+            "1960"
+          ],
+          [
+            "1959",
+            "1959"
+          ],
+          [
+            "1958",
+            "1958"
+          ],
+          [
+            "1957",
+            "1957"
+          ],
+          [
+            "1956",
+            "1956"
+          ],
+          [
+            "1955",
+            "1955"
+          ],
+          [
+            "1954",
+            "1954"
+          ],
+          [
+            "1953",
+            "1953"
+          ],
+          [
+            "1952",
+            "1952"
+          ],
+          [
+            "1951",
+            "1951"
+          ],
+          [
+            "1950",
+            "1950"
+          ],
+          [
+            "1949",
+            "1949"
+          ],
+          [
+            "1948",
+            "1948"
+          ],
+          [
+            "1947",
+            "1947"
+          ],
+          [
+            "1946",
+            "1946"
+          ],
+          [
+            "1945",
+            "1945"
+          ],
+          [
+            "1944",
+            "1944"
+          ],
+          [
+            "1943",
+            "1943"
+          ],
+          [
+            "1942",
+            "1942"
+          ],
+          [
+            "1941",
+            "1941"
+          ],
+          [
+            "1940",
+            "1940"
+          ],
+          [
+            "1939",
+            "1939"
+          ],
+          [
+            "1938",
+            "1938"
+          ],
+          [
+            "1937",
+            "1937"
+          ],
+          [
+            "1936",
+            "1936"
+          ],
+          [
+            "1935",
+            "1935"
+          ],
+          [
+            "1934",
+            "1934"
+          ],
+          [
+            "1933",
+            "1933"
+          ],
+          [
+            "1932",
+            "1932"
+          ],
+          [
+            "1931",
+            "1931"
+          ],
+          [
+            "1930",
+            "1930"
+          ],
+          [
+            "1929",
+            "1929"
+          ],
+          [
+            "1928",
+            "1928"
+          ],
+          [
+            "1927",
+            "1927"
+          ],
+          [
+            "1926",
+            "1926"
+          ],
+          [
+            "1925",
+            "1925"
+          ],
+          [
+            "1924",
+            "1924"
+          ],
+          [
+            "1923",
+            "1923"
+          ],
+          [
+            "1922",
+            "1922"
+          ],
+          [
+            "1921",
+            "1921"
+          ],
+          [
+            "1920",
+            "1920"
+          ]
+        ],
+        "selected": [
+          [
+            "2004",
+            "2004"
+          ]
+        ]
+      },
+      "validation": {}
+    },
+    {
+      "selector": "#input_55",
+      "id": "input_55",
+      "name": "q55_age",
+      "type": "number",
+      "inputType": "number",
+      "labels": {
+        "directLabel": "Age",
+        "placeholder": ""
+      },
+      "value": "20",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_13",
+      "id": "input_13",
+      "name": "q13_email13",
+      "type": "email",
+      "inputType": "email",
+      "labels": {
+        "directLabel": "E-mail",
+        "placeholder": "ex: myname@example.com",
+        "contextText": "example@example.com"
+      },
+      "value": "john.doe@example.com",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_17_full",
+      "id": "input_17_full",
+      "name": "q17_homeNumber[full]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Home Number",
+        "placeholder": ""
+      },
+      "value": "(180) 052-3430",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_18_full",
+      "id": "input_18_full",
+      "name": "q18_cellNumber[full]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Cell Number",
+        "placeholder": ""
+      },
+      "value": "(933) 108-7882",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_15_addr_line1",
+      "id": "input_15_addr_line1",
+      "name": "q15_permanentAddress[addr_line1]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Permanent Address",
+        "placeholder": "",
+        "contextText": "Street Address"
+      },
+      "value": "AXBX BUILDING, 3rd floor Room no 389",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 100
+      }
+    },
+    {
+      "selector": "#input_15_addr_line2",
+      "id": "input_15_addr_line2",
+      "name": "q15_permanentAddress[addr_line2]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Street Address Line 2",
+        "placeholder": "",
+        "contextText": "Street Address Line 2"
+      },
+      "value": "PBS colony XYZ road, Nagole",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 100
+      }
+    },
+    {
+      "selector": "#input_15_city",
+      "id": "input_15_city",
+      "name": "q15_permanentAddress[city]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "City",
+        "placeholder": "",
+        "contextText": "City"
+      },
+      "value": "Nagole",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 60
+      }
+    },
+    {
+      "selector": "#input_15_state",
+      "id": "input_15_state",
+      "name": "q15_permanentAddress[state]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "State / Province",
+        "placeholder": "",
+        "contextText": "State / Province"
+      },
+      "value": "San Francisco",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 60
+      }
+    },
+    {
+      "selector": "#input_15_postal",
+      "id": "input_15_postal",
+      "name": "q15_permanentAddress[postal]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Postal / Zip Code",
+        "placeholder": "",
+        "contextText": "Postal / Zip Code"
+      },
+      "value": "807101",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 20
+      }
+    },
+    {
+      "selector": "#input_15_country",
+      "id": "input_15_country",
+      "name": "q15_permanentAddress[country]",
+      "type": "select-one",
+      "labels": {
+        "directLabel": "Country",
+        "contextText": "Country"
+      },
+      "value": "United States",
+      "isEmpty": false,
+      "isRequired": true,
+      "options": {
+        "unselected": [
+          [
+            "",
+            "Please Select"
+          ],
+          [
+            "Afghanistan",
+            "Afghanistan"
+          ],
+          [
+            "Albania",
+            "Albania"
+          ],
+          [
+            "Algeria",
+            "Algeria"
+          ],
+          [
+            "American Samoa",
+            "American Samoa"
+          ],
+          [
+            "Andorra",
+            "Andorra"
+          ],
+          [
+            "Angola",
+            "Angola"
+          ],
+          [
+            "Anguilla",
+            "Anguilla"
+          ],
+          [
+            "Antigua and Barbuda",
+            "Antigua and Barbuda"
+          ],
+          [
+            "Argentina",
+            "Argentina"
+          ],
+          [
+            "Armenia",
+            "Armenia"
+          ],
+          [
+            "Aruba",
+            "Aruba"
+          ],
+          [
+            "Australia",
+            "Australia"
+          ],
+          [
+            "Austria",
+            "Austria"
+          ],
+          [
+            "Azerbaijan",
+            "Azerbaijan"
+          ],
+          [
+            "The Bahamas",
+            "The Bahamas"
+          ],
+          [
+            "Bahrain",
+            "Bahrain"
+          ],
+          [
+            "Bangladesh",
+            "Bangladesh"
+          ],
+          [
+            "Barbados",
+            "Barbados"
+          ],
+          [
+            "Belarus",
+            "Belarus"
+          ],
+          [
+            "Belgium",
+            "Belgium"
+          ],
+          [
+            "Belize",
+            "Belize"
+          ],
+          [
+            "Benin",
+            "Benin"
+          ],
+          [
+            "Bermuda",
+            "Bermuda"
+          ],
+          [
+            "Bhutan",
+            "Bhutan"
+          ],
+          [
+            "Bolivia",
+            "Bolivia"
+          ],
+          [
+            "Bosnia and Herzegovina",
+            "Bosnia and Herzegovina"
+          ],
+          [
+            "Botswana",
+            "Botswana"
+          ],
+          [
+            "Brazil",
+            "Brazil"
+          ],
+          [
+            "Brunei",
+            "Brunei"
+          ],
+          [
+            "Bulgaria",
+            "Bulgaria"
+          ],
+          [
+            "Burkina Faso",
+            "Burkina Faso"
+          ],
+          [
+            "Burundi",
+            "Burundi"
+          ],
+          [
+            "Cambodia",
+            "Cambodia"
+          ],
+          [
+            "Cameroon",
+            "Cameroon"
+          ],
+          [
+            "Canada",
+            "Canada"
+          ],
+          [
+            "Cape Verde",
+            "Cape Verde"
+          ],
+          [
+            "Cayman Islands",
+            "Cayman Islands"
+          ],
+          [
+            "Central African Republic",
+            "Central African Republic"
+          ],
+          [
+            "Chad",
+            "Chad"
+          ],
+          [
+            "Chile",
+            "Chile"
+          ],
+          [
+            "China",
+            "China"
+          ],
+          [
+            "Christmas Island",
+            "Christmas Island"
+          ],
+          [
+            "Cocos (Keeling) Islands",
+            "Cocos (Keeling) Islands"
+          ],
+          [
+            "Colombia",
+            "Colombia"
+          ],
+          [
+            "Comoros",
+            "Comoros"
+          ],
+          [
+            "Congo",
+            "Congo"
+          ],
+          [
+            "Cook Islands",
+            "Cook Islands"
+          ],
+          [
+            "Costa Rica",
+            "Costa Rica"
+          ],
+          [
+            "Cote d'Ivoire",
+            "Cote d'Ivoire"
+          ],
+          [
+            "Croatia",
+            "Croatia"
+          ],
+          [
+            "Cuba",
+            "Cuba"
+          ],
+          [
+            "Curaçao",
+            "Curaçao"
+          ],
+          [
+            "Cyprus",
+            "Cyprus"
+          ],
+          [
+            "Czech Republic",
+            "Czech Republic"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "Democratic Republic of the Congo"
+          ],
+          [
+            "Denmark",
+            "Denmark"
+          ],
+          [
+            "Djibouti",
+            "Djibouti"
+          ],
+          [
+            "Dominica",
+            "Dominica"
+          ],
+          [
+            "Dominican Republic",
+            "Dominican Republic"
+          ],
+          [
+            "Ecuador",
+            "Ecuador"
+          ],
+          [
+            "Egypt",
+            "Egypt"
+          ],
+          [
+            "El Salvador",
+            "El Salvador"
+          ],
+          [
+            "Equatorial Guinea",
+            "Equatorial Guinea"
+          ],
+          [
+            "Eritrea",
+            "Eritrea"
+          ],
+          [
+            "Estonia",
+            "Estonia"
+          ],
+          [
+            "Ethiopia",
+            "Ethiopia"
+          ],
+          [
+            "Falkland Islands",
+            "Falkland Islands"
+          ],
+          [
+            "Faroe Islands",
+            "Faroe Islands"
+          ],
+          [
+            "Fiji",
+            "Fiji"
+          ],
+          [
+            "Finland",
+            "Finland"
+          ],
+          [
+            "France",
+            "France"
+          ],
+          [
+            "French Polynesia",
+            "French Polynesia"
+          ],
+          [
+            "Gabon",
+            "Gabon"
+          ],
+          [
+            "The Gambia",
+            "The Gambia"
+          ],
+          [
+            "Georgia",
+            "Georgia"
+          ],
+          [
+            "Germany",
+            "Germany"
+          ],
+          [
+            "Ghana",
+            "Ghana"
+          ],
+          [
+            "Gibraltar",
+            "Gibraltar"
+          ],
+          [
+            "Greece",
+            "Greece"
+          ],
+          [
+            "Greenland",
+            "Greenland"
+          ],
+          [
+            "Grenada",
+            "Grenada"
+          ],
+          [
+            "Guadeloupe",
+            "Guadeloupe"
+          ],
+          [
+            "Guam",
+            "Guam"
+          ],
+          [
+            "Guatemala",
+            "Guatemala"
+          ],
+          [
+            "Guernsey",
+            "Guernsey"
+          ],
+          [
+            "Guinea",
+            "Guinea"
+          ],
+          [
+            "Guinea-Bissau",
+            "Guinea-Bissau"
+          ],
+          [
+            "Guyana",
+            "Guyana"
+          ],
+          [
+            "Haiti",
+            "Haiti"
+          ],
+          [
+            "Honduras",
+            "Honduras"
+          ],
+          [
+            "Hong Kong",
+            "Hong Kong"
+          ],
+          [
+            "Hungary",
+            "Hungary"
+          ],
+          [
+            "Iceland",
+            "Iceland"
+          ],
+          [
+            "India",
+            "India"
+          ],
+          [
+            "Indonesia",
+            "Indonesia"
+          ],
+          [
+            "Iran",
+            "Iran"
+          ],
+          [
+            "Iraq",
+            "Iraq"
+          ],
+          [
+            "Ireland",
+            "Ireland"
+          ],
+          [
+            "Israel",
+            "Israel"
+          ],
+          [
+            "Italy",
+            "Italy"
+          ],
+          [
+            "Jamaica",
+            "Jamaica"
+          ],
+          [
+            "Japan",
+            "Japan"
+          ],
+          [
+            "Jersey",
+            "Jersey"
+          ],
+          [
+            "Jordan",
+            "Jordan"
+          ],
+          [
+            "Kazakhstan",
+            "Kazakhstan"
+          ],
+          [
+            "Kenya",
+            "Kenya"
+          ],
+          [
+            "Kiribati",
+            "Kiribati"
+          ],
+          [
+            "North Korea",
+            "North Korea"
+          ],
+          [
+            "South Korea",
+            "South Korea"
+          ],
+          [
+            "Kosovo",
+            "Kosovo"
+          ],
+          [
+            "Kuwait",
+            "Kuwait"
+          ],
+          [
+            "Kyrgyzstan",
+            "Kyrgyzstan"
+          ],
+          [
+            "Laos",
+            "Laos"
+          ],
+          [
+            "Latvia",
+            "Latvia"
+          ],
+          [
+            "Lebanon",
+            "Lebanon"
+          ],
+          [
+            "Lesotho",
+            "Lesotho"
+          ],
+          [
+            "Liberia",
+            "Liberia"
+          ],
+          [
+            "Libya",
+            "Libya"
+          ],
+          [
+            "Liechtenstein",
+            "Liechtenstein"
+          ],
+          [
+            "Lithuania",
+            "Lithuania"
+          ],
+          [
+            "Luxembourg",
+            "Luxembourg"
+          ],
+          [
+            "Macau",
+            "Macau"
+          ],
+          [
+            "Macedonia",
+            "Macedonia"
+          ],
+          [
+            "Madagascar",
+            "Madagascar"
+          ],
+          [
+            "Malawi",
+            "Malawi"
+          ],
+          [
+            "Malaysia",
+            "Malaysia"
+          ],
+          [
+            "Maldives",
+            "Maldives"
+          ],
+          [
+            "Mali",
+            "Mali"
+          ],
+          [
+            "Malta",
+            "Malta"
+          ],
+          [
+            "Marshall Islands",
+            "Marshall Islands"
+          ],
+          [
+            "Martinique",
+            "Martinique"
+          ],
+          [
+            "Mauritania",
+            "Mauritania"
+          ],
+          [
+            "Mauritius",
+            "Mauritius"
+          ],
+          [
+            "Mayotte",
+            "Mayotte"
+          ],
+          [
+            "Mexico",
+            "Mexico"
+          ],
+          [
+            "Micronesia",
+            "Micronesia"
+          ],
+          [
+            "Moldova",
+            "Moldova"
+          ],
+          [
+            "Monaco",
+            "Monaco"
+          ],
+          [
+            "Mongolia",
+            "Mongolia"
+          ],
+          [
+            "Montenegro",
+            "Montenegro"
+          ],
+          [
+            "Montserrat",
+            "Montserrat"
+          ],
+          [
+            "Morocco",
+            "Morocco"
+          ],
+          [
+            "Mozambique",
+            "Mozambique"
+          ],
+          [
+            "Myanmar",
+            "Myanmar"
+          ],
+          [
+            "Nagorno-Karabakh",
+            "Nagorno-Karabakh"
+          ],
+          [
+            "Namibia",
+            "Namibia"
+          ],
+          [
+            "Nauru",
+            "Nauru"
+          ],
+          [
+            "Nepal",
+            "Nepal"
+          ],
+          [
+            "Netherlands",
+            "Netherlands"
+          ],
+          [
+            "Netherlands Antilles",
+            "Netherlands Antilles"
+          ],
+          [
+            "New Caledonia",
+            "New Caledonia"
+          ],
+          [
+            "New Zealand",
+            "New Zealand"
+          ],
+          [
+            "Nicaragua",
+            "Nicaragua"
+          ],
+          [
+            "Niger",
+            "Niger"
+          ],
+          [
+            "Nigeria",
+            "Nigeria"
+          ],
+          [
+            "Niue",
+            "Niue"
+          ],
+          [
+            "Norfolk Island",
+            "Norfolk Island"
+          ],
+          [
+            "Turkish Republic of Northern Cyprus",
+            "Turkish Republic of Northern Cyprus"
+          ],
+          [
+            "Northern Mariana",
+            "Northern Mariana"
+          ],
+          [
+            "Norway",
+            "Norway"
+          ],
+          [
+            "Oman",
+            "Oman"
+          ],
+          [
+            "Pakistan",
+            "Pakistan"
+          ],
+          [
+            "Palau",
+            "Palau"
+          ],
+          [
+            "Palestine",
+            "Palestine"
+          ],
+          [
+            "Panama",
+            "Panama"
+          ],
+          [
+            "Papua New Guinea",
+            "Papua New Guinea"
+          ],
+          [
+            "Paraguay",
+            "Paraguay"
+          ],
+          [
+            "Peru",
+            "Peru"
+          ],
+          [
+            "Philippines",
+            "Philippines"
+          ],
+          [
+            "Pitcairn Islands",
+            "Pitcairn Islands"
+          ],
+          [
+            "Poland",
+            "Poland"
+          ],
+          [
+            "Portugal",
+            "Portugal"
+          ],
+          [
+            "Puerto Rico",
+            "Puerto Rico"
+          ],
+          [
+            "Qatar",
+            "Qatar"
+          ],
+          [
+            "Republic of the Congo",
+            "Republic of the Congo"
+          ],
+          [
+            "Romania",
+            "Romania"
+          ],
+          [
+            "Russia",
+            "Russia"
+          ],
+          [
+            "Rwanda",
+            "Rwanda"
+          ],
+          [
+            "Saint Barthelemy",
+            "Saint Barthelemy"
+          ],
+          [
+            "Saint Helena",
+            "Saint Helena"
+          ],
+          [
+            "Saint Kitts and Nevis",
+            "Saint Kitts and Nevis"
+          ],
+          [
+            "Saint Lucia",
+            "Saint Lucia"
+          ],
+          [
+            "Saint Martin",
+            "Saint Martin"
+          ],
+          [
+            "Saint Pierre and Miquelon",
+            "Saint Pierre and Miquelon"
+          ],
+          [
+            "Saint Vincent and the Grenadines",
+            "Saint Vincent and the Grenadines"
+          ],
+          [
+            "Samoa",
+            "Samoa"
+          ],
+          [
+            "San Marino",
+            "San Marino"
+          ],
+          [
+            "Sao Tome and Principe",
+            "Sao Tome and Principe"
+          ],
+          [
+            "Saudi Arabia",
+            "Saudi Arabia"
+          ],
+          [
+            "Senegal",
+            "Senegal"
+          ],
+          [
+            "Serbia",
+            "Serbia"
+          ],
+          [
+            "Seychelles",
+            "Seychelles"
+          ],
+          [
+            "Sierra Leone",
+            "Sierra Leone"
+          ],
+          [
+            "Singapore",
+            "Singapore"
+          ],
+          [
+            "Slovakia",
+            "Slovakia"
+          ],
+          [
+            "Slovenia",
+            "Slovenia"
+          ],
+          [
+            "Solomon Islands",
+            "Solomon Islands"
+          ],
+          [
+            "Somalia",
+            "Somalia"
+          ],
+          [
+            "Somaliland",
+            "Somaliland"
+          ],
+          [
+            "South Africa",
+            "South Africa"
+          ],
+          [
+            "South Ossetia",
+            "South Ossetia"
+          ],
+          [
+            "South Sudan",
+            "South Sudan"
+          ],
+          [
+            "Spain",
+            "Spain"
+          ],
+          [
+            "Sri Lanka",
+            "Sri Lanka"
+          ],
+          [
+            "Sudan",
+            "Sudan"
+          ],
+          [
+            "Suriname",
+            "Suriname"
+          ],
+          [
+            "Svalbard",
+            "Svalbard"
+          ],
+          [
+            "eSwatini",
+            "eSwatini"
+          ],
+          [
+            "Sweden",
+            "Sweden"
+          ],
+          [
+            "Switzerland",
+            "Switzerland"
+          ],
+          [
+            "Syria",
+            "Syria"
+          ],
+          [
+            "Taiwan",
+            "Taiwan"
+          ],
+          [
+            "Tajikistan",
+            "Tajikistan"
+          ],
+          [
+            "Tanzania",
+            "Tanzania"
+          ],
+          [
+            "Thailand",
+            "Thailand"
+          ],
+          [
+            "Timor-Leste",
+            "Timor-Leste"
+          ],
+          [
+            "Togo",
+            "Togo"
+          ],
+          [
+            "Tokelau",
+            "Tokelau"
+          ],
+          [
+            "Tonga",
+            "Tonga"
+          ],
+          [
+            "Transnistria Pridnestrovie",
+            "Transnistria Pridnestrovie"
+          ],
+          [
+            "Trinidad and Tobago",
+            "Trinidad and Tobago"
+          ],
+          [
+            "Tristan da Cunha",
+            "Tristan da Cunha"
+          ],
+          [
+            "Tunisia",
+            "Tunisia"
+          ],
+          [
+            "Turkey",
+            "Turkey"
+          ],
+          [
+            "Turkmenistan",
+            "Turkmenistan"
+          ],
+          [
+            "Turks and Caicos Islands",
+            "Turks and Caicos Islands"
+          ],
+          [
+            "Tuvalu",
+            "Tuvalu"
+          ],
+          [
+            "Uganda",
+            "Uganda"
+          ],
+          [
+            "Ukraine",
+            "Ukraine"
+          ],
+          [
+            "United Arab Emirates",
+            "United Arab Emirates"
+          ],
+          [
+            "United Kingdom",
+            "United Kingdom"
+          ],
+          [
+            "Uruguay",
+            "Uruguay"
+          ],
+          [
+            "Uzbekistan",
+            "Uzbekistan"
+          ],
+          [
+            "Vanuatu",
+            "Vanuatu"
+          ],
+          [
+            "Vatican City",
+            "Vatican City"
+          ],
+          [
+            "Venezuela",
+            "Venezuela"
+          ],
+          [
+            "Vietnam",
+            "Vietnam"
+          ],
+          [
+            "British Virgin Islands",
+            "British Virgin Islands"
+          ],
+          [
+            "Isle of Man",
+            "Isle of Man"
+          ],
+          [
+            "US Virgin Islands",
+            "US Virgin Islands"
+          ],
+          [
+            "Wallis and Futuna",
+            "Wallis and Futuna"
+          ],
+          [
+            "Western Sahara",
+            "Western Sahara"
+          ],
+          [
+            "Yemen",
+            "Yemen"
+          ],
+          [
+            "Zambia",
+            "Zambia"
+          ],
+          [
+            "Zimbabwe",
+            "Zimbabwe"
+          ],
+          [
+            "other",
+            "Other"
+          ]
+        ],
+        "selected": [
+          [
+            "United States",
+            "United States"
+          ]
+        ]
+      },
+      "validation": {}
+    },
+    {
+      "selector": "#input_65_0",
+      "id": "input_65_0",
+      "name": "q65_canYou65",
+      "type": "radio",
+      "inputType": "radio",
+      "labels": {
+        "directLabel": "Yes",
+        "groupLabel": "Are you authorized to work in the United States?",
+        "placeholder": "",
+        "contextText": "Yes"
+      },
+      "value": true,
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_65_1",
+      "id": "input_65_1",
+      "name": "q65_canYou65",
       "type": "radio",
       "inputType": "radio",
       "labels": {
         "directLabel": "No",
-        "groupLabel": "Are you currently legally entitled to work in the country where the job is based?",
+        "groupLabel": "Are you authorized to work in the United States?",
         "placeholder": "",
         "contextText": "No"
       },
@@ -661,12 +5574,1475 @@ parsed_data_json = r'''
       "validation": {}
     },
     {
-      "selector": "#input_14",
-      "id": "input_14",
-      "name": "q14_ifApplicable14",
-      "type": "textarea",
+      "selector": "#input_78_0",
+      "id": "input_78_0",
+      "name": "q78_selectThe[]",
+      "type": "checkbox",
+      "inputType": "checkbox",
       "labels": {
-        "directLabel": "If applicable, please detail any restrictions:",
+        "directLabel": "Monday",
+        "groupLabel": "Select the day(s) you're available for work",
+        "placeholder": "",
+        "contextText": "Monday"
+      },
+      "value": true,
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_78_1",
+      "id": "input_78_1",
+      "name": "q78_selectThe[]",
+      "type": "checkbox",
+      "inputType": "checkbox",
+      "labels": {
+        "directLabel": "Tuesday",
+        "groupLabel": "Select the day(s) you're available for work",
+        "placeholder": "",
+        "contextText": "Tuesday"
+      },
+      "value": true,
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_78_2",
+      "id": "input_78_2",
+      "name": "q78_selectThe[]",
+      "type": "checkbox",
+      "inputType": "checkbox",
+      "labels": {
+        "directLabel": "Wednesday",
+        "groupLabel": "Select the day(s) you're available for work",
+        "placeholder": "",
+        "contextText": "Wednesday"
+      },
+      "value": true,
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_78_3",
+      "id": "input_78_3",
+      "name": "q78_selectThe[]",
+      "type": "checkbox",
+      "inputType": "checkbox",
+      "labels": {
+        "directLabel": "Thursday",
+        "groupLabel": "Select the day(s) you're available for work",
+        "placeholder": "",
+        "contextText": "Thursday"
+      },
+      "value": true,
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_78_4",
+      "id": "input_78_4",
+      "name": "q78_selectThe[]",
+      "type": "checkbox",
+      "inputType": "checkbox",
+      "labels": {
+        "directLabel": "Friday",
+        "groupLabel": "Select the day(s) you're available for work",
+        "placeholder": "",
+        "contextText": "Friday"
+      },
+      "value": true,
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_79",
+      "id": "input_79",
+      "name": "q79_listYour",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "List your available hours for work",
+        "placeholder": ""
+      },
+      "value": "9 AM - 5 PM",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_64",
+      "id": "input_64",
+      "name": "q64_nameOf",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Name of College",
+        "placeholder": " "
+      },
+      "value": "State University",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_16_addr_line1",
+      "id": "input_16_addr_line1",
+      "name": "q16_schoolAddress[addr_line1]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "School Address",
+        "placeholder": "",
+        "contextText": "Street Address"
+      },
+      "value": "State University Campus, Building A, Room 101",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 100
+      }
+    },
+    {
+      "selector": "#input_16_addr_line2",
+      "id": "input_16_addr_line2",
+      "name": "q16_schoolAddress[addr_line2]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Street Address Line 2",
+        "placeholder": "",
+        "contextText": "Street Address Line 2"
+      },
+      "value": "Room 101, Education City",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 100
+      }
+    },
+    {
+      "selector": "#input_16_city",
+      "id": "input_16_city",
+      "name": "q16_schoolAddress[city]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "City",
+        "placeholder": "",
+        "contextText": "City"
+      },
+      "value": "Education City",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 60
+      }
+    },
+    {
+      "selector": "#input_16_state",
+      "id": "input_16_state",
+      "name": "q16_schoolAddress[state]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "State / Province",
+        "placeholder": "",
+        "contextText": "State / Province"
+      },
+      "value": "California",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 60
+      }
+    },
+    {
+      "selector": "#input_16_postal",
+      "id": "input_16_postal",
+      "name": "q16_schoolAddress[postal]",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Postal / Zip Code",
+        "placeholder": "",
+        "contextText": "Postal / Zip Code"
+      },
+      "value": "90210",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 20
+      }
+    },
+    {
+      "selector": "#input_16_country",
+      "id": "input_16_country",
+      "name": "q16_schoolAddress[country]",
+      "type": "select-one",
+      "labels": {
+        "directLabel": "Country",
+        "contextText": "Country"
+      },
+      "value": "United States",
+      "isEmpty": false,
+      "isRequired": true,
+      "options": {
+        "unselected": [
+          [
+            "",
+            "Please Select"
+          ],
+          [
+            "Afghanistan",
+            "Afghanistan"
+          ],
+          [
+            "Albania",
+            "Albania"
+          ],
+          [
+            "Algeria",
+            "Algeria"
+          ],
+          [
+            "American Samoa",
+            "American Samoa"
+          ],
+          [
+            "Andorra",
+            "Andorra"
+          ],
+          [
+            "Angola",
+            "Angola"
+          ],
+          [
+            "Anguilla",
+            "Anguilla"
+          ],
+          [
+            "Antigua and Barbuda",
+            "Antigua and Barbuda"
+          ],
+          [
+            "Argentina",
+            "Argentina"
+          ],
+          [
+            "Armenia",
+            "Armenia"
+          ],
+          [
+            "Aruba",
+            "Aruba"
+          ],
+          [
+            "Australia",
+            "Australia"
+          ],
+          [
+            "Austria",
+            "Austria"
+          ],
+          [
+            "Azerbaijan",
+            "Azerbaijan"
+          ],
+          [
+            "The Bahamas",
+            "The Bahamas"
+          ],
+          [
+            "Bahrain",
+            "Bahrain"
+          ],
+          [
+            "Bangladesh",
+            "Bangladesh"
+          ],
+          [
+            "Barbados",
+            "Barbados"
+          ],
+          [
+            "Belarus",
+            "Belarus"
+          ],
+          [
+            "Belgium",
+            "Belgium"
+          ],
+          [
+            "Belize",
+            "Belize"
+          ],
+          [
+            "Benin",
+            "Benin"
+          ],
+          [
+            "Bermuda",
+            "Bermuda"
+          ],
+          [
+            "Bhutan",
+            "Bhutan"
+          ],
+          [
+            "Bolivia",
+            "Bolivia"
+          ],
+          [
+            "Bosnia and Herzegovina",
+            "Bosnia and Herzegovina"
+          ],
+          [
+            "Botswana",
+            "Botswana"
+          ],
+          [
+            "Brazil",
+            "Brazil"
+          ],
+          [
+            "Brunei",
+            "Brunei"
+          ],
+          [
+            "Bulgaria",
+            "Bulgaria"
+          ],
+          [
+            "Burkina Faso",
+            "Burkina Faso"
+          ],
+          [
+            "Burundi",
+            "Burundi"
+          ],
+          [
+            "Cambodia",
+            "Cambodia"
+          ],
+          [
+            "Cameroon",
+            "Cameroon"
+          ],
+          [
+            "Canada",
+            "Canada"
+          ],
+          [
+            "Cape Verde",
+            "Cape Verde"
+          ],
+          [
+            "Cayman Islands",
+            "Cayman Islands"
+          ],
+          [
+            "Central African Republic",
+            "Central African Republic"
+          ],
+          [
+            "Chad",
+            "Chad"
+          ],
+          [
+            "Chile",
+            "Chile"
+          ],
+          [
+            "China",
+            "China"
+          ],
+          [
+            "Christmas Island",
+            "Christmas Island"
+          ],
+          [
+            "Cocos (Keeling) Islands",
+            "Cocos (Keeling) Islands"
+          ],
+          [
+            "Colombia",
+            "Colombia"
+          ],
+          [
+            "Comoros",
+            "Comoros"
+          ],
+          [
+            "Congo",
+            "Congo"
+          ],
+          [
+            "Cook Islands",
+            "Cook Islands"
+          ],
+          [
+            "Costa Rica",
+            "Costa Rica"
+          ],
+          [
+            "Cote d'Ivoire",
+            "Cote d'Ivoire"
+          ],
+          [
+            "Croatia",
+            "Croatia"
+          ],
+          [
+            "Cuba",
+            "Cuba"
+          ],
+          [
+            "Curaçao",
+            "Curaçao"
+          ],
+          [
+            "Cyprus",
+            "Cyprus"
+          ],
+          [
+            "Czech Republic",
+            "Czech Republic"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "Democratic Republic of the Congo"
+          ],
+          [
+            "Denmark",
+            "Denmark"
+          ],
+          [
+            "Djibouti",
+            "Djibouti"
+          ],
+          [
+            "Dominica",
+            "Dominica"
+          ],
+          [
+            "Dominican Republic",
+            "Dominican Republic"
+          ],
+          [
+            "Ecuador",
+            "Ecuador"
+          ],
+          [
+            "Egypt",
+            "Egypt"
+          ],
+          [
+            "El Salvador",
+            "El Salvador"
+          ],
+          [
+            "Equatorial Guinea",
+            "Equatorial Guinea"
+          ],
+          [
+            "Eritrea",
+            "Eritrea"
+          ],
+          [
+            "Estonia",
+            "Estonia"
+          ],
+          [
+            "Ethiopia",
+            "Ethiopia"
+          ],
+          [
+            "Falkland Islands",
+            "Falkland Islands"
+          ],
+          [
+            "Faroe Islands",
+            "Faroe Islands"
+          ],
+          [
+            "Fiji",
+            "Fiji"
+          ],
+          [
+            "Finland",
+            "Finland"
+          ],
+          [
+            "France",
+            "France"
+          ],
+          [
+            "French Polynesia",
+            "French Polynesia"
+          ],
+          [
+            "Gabon",
+            "Gabon"
+          ],
+          [
+            "The Gambia",
+            "The Gambia"
+          ],
+          [
+            "Georgia",
+            "Georgia"
+          ],
+          [
+            "Germany",
+            "Germany"
+          ],
+          [
+            "Ghana",
+            "Ghana"
+          ],
+          [
+            "Gibraltar",
+            "Gibraltar"
+          ],
+          [
+            "Greece",
+            "Greece"
+          ],
+          [
+            "Greenland",
+            "Greenland"
+          ],
+          [
+            "Grenada",
+            "Grenada"
+          ],
+          [
+            "Guadeloupe",
+            "Guadeloupe"
+          ],
+          [
+            "Guam",
+            "Guam"
+          ],
+          [
+            "Guatemala",
+            "Guatemala"
+          ],
+          [
+            "Guernsey",
+            "Guernsey"
+          ],
+          [
+            "Guinea",
+            "Guinea"
+          ],
+          [
+            "Guinea-Bissau",
+            "Guinea-Bissau"
+          ],
+          [
+            "Guyana",
+            "Guyana"
+          ],
+          [
+            "Haiti",
+            "Haiti"
+          ],
+          [
+            "Honduras",
+            "Honduras"
+          ],
+          [
+            "Hong Kong",
+            "Hong Kong"
+          ],
+          [
+            "Hungary",
+            "Hungary"
+          ],
+          [
+            "Iceland",
+            "Iceland"
+          ],
+          [
+            "India",
+            "India"
+          ],
+          [
+            "Indonesia",
+            "Indonesia"
+          ],
+          [
+            "Iran",
+            "Iran"
+          ],
+          [
+            "Iraq",
+            "Iraq"
+          ],
+          [
+            "Ireland",
+            "Ireland"
+          ],
+          [
+            "Israel",
+            "Israel"
+          ],
+          [
+            "Italy",
+            "Italy"
+          ],
+          [
+            "Jamaica",
+            "Jamaica"
+          ],
+          [
+            "Japan",
+            "Japan"
+          ],
+          [
+            "Jersey",
+            "Jersey"
+          ],
+          [
+            "Jordan",
+            "Jordan"
+          ],
+          [
+            "Kazakhstan",
+            "Kazakhstan"
+          ],
+          [
+            "Kenya",
+            "Kenya"
+          ],
+          [
+            "Kiribati",
+            "Kiribati"
+          ],
+          [
+            "North Korea",
+            "North Korea"
+          ],
+          [
+            "South Korea",
+            "South Korea"
+          ],
+          [
+            "Kosovo",
+            "Kosovo"
+          ],
+          [
+            "Kuwait",
+            "Kuwait"
+          ],
+          [
+            "Kyrgyzstan",
+            "Kyrgyzstan"
+          ],
+          [
+            "Laos",
+            "Laos"
+          ],
+          [
+            "Latvia",
+            "Latvia"
+          ],
+          [
+            "Lebanon",
+            "Lebanon"
+          ],
+          [
+            "Lesotho",
+            "Lesotho"
+          ],
+          [
+            "Liberia",
+            "Liberia"
+          ],
+          [
+            "Libya",
+            "Libya"
+          ],
+          [
+            "Liechtenstein",
+            "Liechtenstein"
+          ],
+          [
+            "Lithuania",
+            "Lithuania"
+          ],
+          [
+            "Luxembourg",
+            "Luxembourg"
+          ],
+          [
+            "Macau",
+            "Macau"
+          ],
+          [
+            "Macedonia",
+            "Macedonia"
+          ],
+          [
+            "Madagascar",
+            "Madagascar"
+          ],
+          [
+            "Malawi",
+            "Malawi"
+          ],
+          [
+            "Malaysia",
+            "Malaysia"
+          ],
+          [
+            "Maldives",
+            "Maldives"
+          ],
+          [
+            "Mali",
+            "Mali"
+          ],
+          [
+            "Malta",
+            "Malta"
+          ],
+          [
+            "Marshall Islands",
+            "Marshall Islands"
+          ],
+          [
+            "Martinique",
+            "Martinique"
+          ],
+          [
+            "Mauritania",
+            "Mauritania"
+          ],
+          [
+            "Mauritius",
+            "Mauritius"
+          ],
+          [
+            "Mayotte",
+            "Mayotte"
+          ],
+          [
+            "Mexico",
+            "Mexico"
+          ],
+          [
+            "Micronesia",
+            "Micronesia"
+          ],
+          [
+            "Moldova",
+            "Moldova"
+          ],
+          [
+            "Monaco",
+            "Monaco"
+          ],
+          [
+            "Mongolia",
+            "Mongolia"
+          ],
+          [
+            "Montenegro",
+            "Montenegro"
+          ],
+          [
+            "Montserrat",
+            "Montserrat"
+          ],
+          [
+            "Morocco",
+            "Morocco"
+          ],
+          [
+            "Mozambique",
+            "Mozambique"
+          ],
+          [
+            "Myanmar",
+            "Myanmar"
+          ],
+          [
+            "Nagorno-Karabakh",
+            "Nagorno-Karabakh"
+          ],
+          [
+            "Namibia",
+            "Namibia"
+          ],
+          [
+            "Nauru",
+            "Nauru"
+          ],
+          [
+            "Nepal",
+            "Nepal"
+          ],
+          [
+            "Netherlands",
+            "Netherlands"
+          ],
+          [
+            "Netherlands Antilles",
+            "Netherlands Antilles"
+          ],
+          [
+            "New Caledonia",
+            "New Caledonia"
+          ],
+          [
+            "New Zealand",
+            "New Zealand"
+          ],
+          [
+            "Nicaragua",
+            "Nicaragua"
+          ],
+          [
+            "Niger",
+            "Niger"
+          ],
+          [
+            "Nigeria",
+            "Nigeria"
+          ],
+          [
+            "Niue",
+            "Niue"
+          ],
+          [
+            "Norfolk Island",
+            "Norfolk Island"
+          ],
+          [
+            "Turkish Republic of Northern Cyprus",
+            "Turkish Republic of Northern Cyprus"
+          ],
+          [
+            "Northern Mariana",
+            "Northern Mariana"
+          ],
+          [
+            "Norway",
+            "Norway"
+          ],
+          [
+            "Oman",
+            "Oman"
+          ],
+          [
+            "Pakistan",
+            "Pakistan"
+          ],
+          [
+            "Palau",
+            "Palau"
+          ],
+          [
+            "Palestine",
+            "Palestine"
+          ],
+          [
+            "Panama",
+            "Panama"
+          ],
+          [
+            "Papua New Guinea",
+            "Papua New Guinea"
+          ],
+          [
+            "Paraguay",
+            "Paraguay"
+          ],
+          [
+            "Peru",
+            "Peru"
+          ],
+          [
+            "Philippines",
+            "Philippines"
+          ],
+          [
+            "Pitcairn Islands",
+            "Pitcairn Islands"
+          ],
+          [
+            "Poland",
+            "Poland"
+          ],
+          [
+            "Portugal",
+            "Portugal"
+          ],
+          [
+            "Puerto Rico",
+            "Puerto Rico"
+          ],
+          [
+            "Qatar",
+            "Qatar"
+          ],
+          [
+            "Republic of the Congo",
+            "Republic of the Congo"
+          ],
+          [
+            "Romania",
+            "Romania"
+          ],
+          [
+            "Russia",
+            "Russia"
+          ],
+          [
+            "Rwanda",
+            "Rwanda"
+          ],
+          [
+            "Saint Barthelemy",
+            "Saint Barthelemy"
+          ],
+          [
+            "Saint Helena",
+            "Saint Helena"
+          ],
+          [
+            "Saint Kitts and Nevis",
+            "Saint Kitts and Nevis"
+          ],
+          [
+            "Saint Lucia",
+            "Saint Lucia"
+          ],
+          [
+            "Saint Martin",
+            "Saint Martin"
+          ],
+          [
+            "Saint Pierre and Miquelon",
+            "Saint Pierre and Miquelon"
+          ],
+          [
+            "Saint Vincent and the Grenadines",
+            "Saint Vincent and the Grenadines"
+          ],
+          [
+            "Samoa",
+            "Samoa"
+          ],
+          [
+            "San Marino",
+            "San Marino"
+          ],
+          [
+            "Sao Tome and Principe",
+            "Sao Tome and Principe"
+          ],
+          [
+            "Saudi Arabia",
+            "Saudi Arabia"
+          ],
+          [
+            "Senegal",
+            "Senegal"
+          ],
+          [
+            "Serbia",
+            "Serbia"
+          ],
+          [
+            "Seychelles",
+            "Seychelles"
+          ],
+          [
+            "Sierra Leone",
+            "Sierra Leone"
+          ],
+          [
+            "Singapore",
+            "Singapore"
+          ],
+          [
+            "Slovakia",
+            "Slovakia"
+          ],
+          [
+            "Slovenia",
+            "Slovenia"
+          ],
+          [
+            "Solomon Islands",
+            "Solomon Islands"
+          ],
+          [
+            "Somalia",
+            "Somalia"
+          ],
+          [
+            "Somaliland",
+            "Somaliland"
+          ],
+          [
+            "South Africa",
+            "South Africa"
+          ],
+          [
+            "South Ossetia",
+            "South Ossetia"
+          ],
+          [
+            "South Sudan",
+            "South Sudan"
+          ],
+          [
+            "Spain",
+            "Spain"
+          ],
+          [
+            "Sri Lanka",
+            "Sri Lanka"
+          ],
+          [
+            "Sudan",
+            "Sudan"
+          ],
+          [
+            "Suriname",
+            "Suriname"
+          ],
+          [
+            "Svalbard",
+            "Svalbard"
+          ],
+          [
+            "eSwatini",
+            "eSwatini"
+          ],
+          [
+            "Sweden",
+            "Sweden"
+          ],
+          [
+            "Switzerland",
+            "Switzerland"
+          ],
+          [
+            "Syria",
+            "Syria"
+          ],
+          [
+            "Taiwan",
+            "Taiwan"
+          ],
+          [
+            "Tajikistan",
+            "Tajikistan"
+          ],
+          [
+            "Tanzania",
+            "Tanzania"
+          ],
+          [
+            "Thailand",
+            "Thailand"
+          ],
+          [
+            "Timor-Leste",
+            "Timor-Leste"
+          ],
+          [
+            "Togo",
+            "Togo"
+          ],
+          [
+            "Tokelau",
+            "Tokelau"
+          ],
+          [
+            "Tonga",
+            "Tonga"
+          ],
+          [
+            "Transnistria Pridnestrovie",
+            "Transnistria Pridnestrovie"
+          ],
+          [
+            "Trinidad and Tobago",
+            "Trinidad and Tobago"
+          ],
+          [
+            "Tristan da Cunha",
+            "Tristan da Cunha"
+          ],
+          [
+            "Tunisia",
+            "Tunisia"
+          ],
+          [
+            "Turkey",
+            "Turkey"
+          ],
+          [
+            "Turkmenistan",
+            "Turkmenistan"
+          ],
+          [
+            "Turks and Caicos Islands",
+            "Turks and Caicos Islands"
+          ],
+          [
+            "Tuvalu",
+            "Tuvalu"
+          ],
+          [
+            "Uganda",
+            "Uganda"
+          ],
+          [
+            "Ukraine",
+            "Ukraine"
+          ],
+          [
+            "United Arab Emirates",
+            "United Arab Emirates"
+          ],
+          [
+            "United Kingdom",
+            "United Kingdom"
+          ],
+          [
+            "Uruguay",
+            "Uruguay"
+          ],
+          [
+            "Uzbekistan",
+            "Uzbekistan"
+          ],
+          [
+            "Vanuatu",
+            "Vanuatu"
+          ],
+          [
+            "Vatican City",
+            "Vatican City"
+          ],
+          [
+            "Venezuela",
+            "Venezuela"
+          ],
+          [
+            "Vietnam",
+            "Vietnam"
+          ],
+          [
+            "British Virgin Islands",
+            "British Virgin Islands"
+          ],
+          [
+            "Isle of Man",
+            "Isle of Man"
+          ],
+          [
+            "US Virgin Islands",
+            "US Virgin Islands"
+          ],
+          [
+            "Wallis and Futuna",
+            "Wallis and Futuna"
+          ],
+          [
+            "Western Sahara",
+            "Western Sahara"
+          ],
+          [
+            "Yemen",
+            "Yemen"
+          ],
+          [
+            "Zambia",
+            "Zambia"
+          ],
+          [
+            "Zimbabwe",
+            "Zimbabwe"
+          ],
+          [
+            "other",
+            "Other"
+          ]
+        ],
+        "selected": [
+          [
+            "United States",
+            "United States"
+          ]
+        ]
+      },
+      "validation": {}
+    },
+    {
+      "selector": "#input_56",
+      "id": "input_56",
+      "name": "q56_major",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Major",
+        "placeholder": " "
+      },
+      "value": "Computer Science",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_68",
+      "id": "input_68",
+      "name": "q68_year",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Year",
+        "placeholder": ""
+      },
+      "value": "2026",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_60",
+      "id": "input_60",
+      "name": "q60_otherColleges60",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Other College(s) info",
+        "placeholder": " "
+      },
+      "value": "",
+      "isEmpty": true,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_24",
+      "id": "input_24",
+      "name": "q24_highSchool",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "High School - City - Dates",
+        "placeholder": " "
+      },
+      "value": "",
+      "isEmpty": true,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_44",
+      "id": "input_44",
+      "name": "q44_place44",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Place",
+        "placeholder": " "
+      },
+      "value": "Tech Corp",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#month_69",
+      "id": "month_69",
+      "name": "q69_date[month]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Month",
+        "placeholder": "",
+        "contextText": "-Month"
+      },
+      "value": "11",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 2
+      }
+    },
+    {
+      "selector": "#day_69",
+      "id": "day_69",
+      "name": "q69_date[day]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Day",
+        "placeholder": "",
+        "contextText": "-Day"
+      },
+      "value": "12",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 2
+      }
+    },
+    {
+      "selector": "#year_69",
+      "id": "year_69",
+      "name": "q69_date[year]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Year",
+        "placeholder": "",
+        "contextText": "Year"
+      },
+      "value": "1942",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 4
+      }
+    },
+    {
+      "selector": "#lite_mode_69",
+      "id": "lite_mode_69",
+      "name": "",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Date",
+        "placeholder": "MM-DD-YYYY",
+        "contextText": "Date"
+      },
+      "value": "11-12-1942",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_70",
+      "id": "input_70",
+      "name": "q70_title70",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Title",
+        "placeholder": ""
+      },
+      "value": "Senior Developer",
+      "isEmpty": false,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_45",
+      "id": "input_45",
+      "name": "q45_place",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Place",
+        "placeholder": " "
+      },
+      "value": "",
+      "isEmpty": true,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#month_72",
+      "id": "month_72",
+      "name": "q72_date72[month]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Month",
+        "placeholder": "",
+        "contextText": "-Month"
+      },
+      "value": "",
+      "isEmpty": true,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 2
+      }
+    },
+    {
+      "selector": "#day_72",
+      "id": "day_72",
+      "name": "q72_date72[day]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Day",
+        "placeholder": "",
+        "contextText": "-Day"
+      },
+      "value": "",
+      "isEmpty": true,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 2
+      }
+    },
+    {
+      "selector": "#year_72",
+      "id": "year_72",
+      "name": "q72_date72[year]",
+      "type": "tel",
+      "inputType": "tel",
+      "labels": {
+        "directLabel": "Year",
+        "placeholder": "",
+        "contextText": "Year"
+      },
+      "value": "",
+      "isEmpty": true,
+      "isRequired": false,
+      "validation": {
+        "maxLength": 4
+      }
+    },
+    {
+      "selector": "#lite_mode_72",
+      "id": "lite_mode_72",
+      "name": "",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Date",
+        "placeholder": "MM-DD-YYYY",
+        "contextText": "Date"
+      },
+      "value": "",
+      "isEmpty": true,
+      "isRequired": false,
+      "validation": {}
+    },
+    {
+      "selector": "#input_73",
+      "id": "input_73",
+      "name": "q73_title",
+      "type": "text",
+      "inputType": "text",
+      "labels": {
+        "directLabel": "Title",
         "placeholder": ""
       },
       "value": "",
@@ -675,45 +7051,53 @@ parsed_data_json = r'''
       "validation": {}
     },
     {
-      "selector": "#input_9_0",
-      "id": "input_9_0",
-      "name": "q9_ifSelected",
-      "type": "radio",
-      "inputType": "radio",
+      "selector": "#input_76",
+      "id": "input_76",
+      "name": "file",
+      "type": "file",
+      "inputType": "file",
       "labels": {
-        "directLabel": "Yes",
-        "groupLabel": "If selected for employment are you willing to submit a background check?",
+        "directLabel": "Attach Your CV",
         "placeholder": "",
-        "contextText": "Yes"
+        "precedingLabels": [
+          "Drag and drop files here",
+          "Choose a file",
+          "Drag and drop files here",
+          "Choose a file"
+        ]
       },
-      "value": false,
+      "value": null,
       "isEmpty": true,
       "isRequired": false,
       "validation": {}
     },
     {
-      "selector": "#input_9_1",
-      "id": "input_9_1",
-      "name": "q9_ifSelected",
-      "type": "radio",
-      "inputType": "radio",
+      "selector": "#input_77",
+      "id": "input_77",
+      "name": "file",
+      "type": "file",
+      "inputType": "file",
       "labels": {
-        "directLabel": "No",
-        "groupLabel": "If selected for employment are you willing to submit a background check?",
+        "directLabel": "Attach Cover Letter",
         "placeholder": "",
-        "contextText": "No"
+        "precedingLabels": [
+          "Drag and drop files here",
+          "Choose a file",
+          "Drag and drop files here",
+          "Choose a file"
+        ]
       },
-      "value": false,
+      "value": null,
       "isEmpty": true,
       "isRequired": false,
       "validation": {}
     }
   ],
   "metadata": {
-    "totalFields": 15,
-    "requiredFields": 0,
-    "emptyFields": 15,
-    "formAction": "https://submit.jotform.com/submit/252131352654450",
+    "totalFields": 51,
+    "requiredFields": 2,
+    "emptyFields": 12,
+    "formAction": "https://submit.jotform.com/submit/252470591559465",
     "formMethod": "post"
   }
 }
