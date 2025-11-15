@@ -8,7 +8,7 @@ load_dotenv()
 
 # Configure Gemini
 genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
-model = genai.GenerativeModel('gemini-2.0-flash-lite')
+model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
 SYSTEM_PROMPT = """You are a form autofill assistant. You receive:
 1. parsed_data: JSON with form fields (selectors, labels, types, options)
@@ -7369,7 +7369,7 @@ def main():
             print(f"      Reasoning: {action.get('reasoning')}")
         
         # Save to file
-        output_file = 'output_actions.json'
+        output_file = './test_response_main/output_actions.json'
         with open(output_file, 'w') as f:
             json.dump(actions, f, indent=2)
         print(f"\n💾 Actions saved to {output_file}")
