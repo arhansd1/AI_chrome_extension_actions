@@ -81,17 +81,19 @@ Action Types (USE APPROPRIATE TYPE):
 7. fill_date - Date inputs with proper formatting
    {
      "action": "fill_date",
-     "value": "18/11/2004"
+     "value": "2004-11-18"  # Use YYYY-MM-DD format for date inputs
    }
+   Convert from personal_details date format to ISO format (YYYY-MM-DD)
    Use date value from personal_details (DOB.day, DOB.month, DOB.year)
-   Let the browser handle date formatting based on input type
 
 8. upload_file - File upload fields
    {
      "action": "upload_file",
-     "value": "Resume.pdf"
+     "value": "filename_from_personal_details.resume_filename"
    }
    Use for: resume, CV, cover letter, portfolio uploads
+   IMPORTANT: Check if personal_details contains 'resume_base64' and 'resume_filename'
+    Only create upload_file action if both exist and are not null
 
 9. spin_increment / spin_decrement - Number input adjustments
    {
@@ -114,8 +116,9 @@ MATCHING STRATEGY:
 - Contact: email, phone, mobile, homePhone
 - Address: Use address.streetAddress, address.city, address.state, address.postal, address.country
 - Date fields: DOB.day, DOB.month, DOB.year or dateOfBirth arrays
-- Education: education.degree, education.major, education.university, educationYear
-- Employment: occupation, jobTitle, company, industry
+- Education arrays: personal_details.educations[0].institution, .degree, .field_of_study, .start_year, .end_year
+- Experience arrays: personal_details.experiences[0].company, .title, .start_month, .start_year, .description
+- Handle multiple education/work entries by matching to corresponding form sections
 - For dropdowns: match personal_details values to option values in parsed_data.options
 - Gender: personal_details.gender → match to radio/select options
 - Multiple selections: split comma-separated or use arrays from personal_details
